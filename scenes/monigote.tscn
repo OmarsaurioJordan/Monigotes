@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://cojca4eb3xmwh"]
+
+[ext_resource type="Script" uid="uid://beq83ps46o5h1" path="res://scripts/monigote.gd" id="1_5uppf"]
+[ext_resource type="Texture2D" uid="uid://dpunnr0r0wj0a" path="res://sprites/d_monigotin_sombra.png" id="1_wd2l7"]
+[ext_resource type="Texture2D" uid="uid://c7hqa730lcchw" path="res://sprites/d_monigotin1.png" id="2_5uppf"]
+[ext_resource type="Texture2D" uid="uid://6o4gk0lep81v" path="res://sprites/d_monigotin_caderasf.png" id="3_m4ibw"]
+[ext_resource type="Texture2D" uid="uid://hey7c3rh6e5" path="res://sprites/d_monigotin_caderasm.png" id="4_0y73q"]
+[ext_resource type="Texture2D" uid="uid://b74o73eqa8p73" path="res://sprites/d_monigotin_torsof.png" id="5_pr13g"]
+[ext_resource type="Texture2D" uid="uid://c6hmaqk1aq0na" path="res://sprites/d_monigotin_torsom.png" id="6_2q4ud"]
+[ext_resource type="Texture2D" uid="uid://t7mpjtqanu4f" path="res://sprites/d_monigotin_idea1.png" id="7_jrm07"]
+[ext_resource type="Texture2D" uid="uid://bgps0fwx52gsx" path="res://sprites/d_monigotin_idea2.png" id="8_q0jqw"]
+[ext_resource type="Texture2D" uid="uid://npdib7fg6lw" path="res://sprites/d_monigotin_emo.png" id="9_fyvpd"]
+[ext_resource type="Texture2D" uid="uid://c8giv1bpwgapo" path="res://sprites/d_monigotin_pelof.png" id="10_rl8v1"]
+[ext_resource type="Texture2D" uid="uid://dvakpwj021jtp" path="res://sprites/d_monigotin_pelom.png" id="11_fckuw"]
+[ext_resource type="Texture2D" uid="uid://bvevx3e0n3gu5" path="res://sprites/d_monigotin_clase.png" id="12_cjt2x"]
+[ext_resource type="Texture2D" uid="uid://b6su8xji01p7" path="res://sprites/d_monigotin_rol.png" id="13_7xo5g"]
+
+[node name="Monigote" type="Node2D" unique_id=1410172999]
+script = ExtResource("1_5uppf")
+metadata/_edit_lock_ = true
+
+[node name="Visual" type="Node2D" parent="." unique_id=1794711846]
+position = Vector2(1, -91)
+metadata/_edit_lock_ = true
+
+[node name="Sombra" type="Sprite2D" parent="Visual" unique_id=571417013]
+modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
+position = Vector2(-1, 91)
+scale = Vector2(1, 0.5)
+texture = ExtResource("1_wd2l7")
+metadata/_edit_lock_ = true
+
+[node name="Cuerpo" type="Sprite2D" parent="Visual" unique_id=1158085870]
+texture = ExtResource("2_5uppf")
+hframes = 13
+frame = 7
+metadata/_edit_lock_ = true
+
+[node name="Genital" type="Sprite2D" parent="Visual/Cuerpo" unique_id=121353969]
+visible = false
+texture = ExtResource("2_5uppf")
+hframes = 13
+frame = 12
+metadata/_edit_lock_ = true
+
+[node name="BajoFem" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1535648964]
+texture = ExtResource("3_m4ibw")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="BajoMas" type="Sprite2D" parent="Visual/Cuerpo" unique_id=82641902]
+texture = ExtResource("4_0y73q")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="TorsoFem" type="Sprite2D" parent="Visual/Cuerpo" unique_id=2088667831]
+texture = ExtResource("5_pr13g")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="TorsoMas" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1589714403]
+texture = ExtResource("6_2q4ud")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="VestUno" type="Sprite2D" parent="Visual/Cuerpo" unique_id=2126492840]
+texture = ExtResource("7_jrm07")
+hframes = 26
+metadata/_edit_lock_ = true
+
+[node name="VestDos" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1612105784]
+texture = ExtResource("8_q0jqw")
+hframes = 26
+metadata/_edit_lock_ = true
+
+[node name="Cabeza" type="Sprite2D" parent="Visual" unique_id=1269604141]
+texture = ExtResource("2_5uppf")
+hframes = 13
+frame = 6
+metadata/_edit_lock_ = true
+
+[node name="Emocion" type="Sprite2D" parent="Visual/Cabeza" unique_id=1317851759]
+texture = ExtResource("9_fyvpd")
+hframes = 33
+metadata/_edit_lock_ = true
+
+[node name="PeloFem" type="Sprite2D" parent="Visual/Cabeza" unique_id=153142081]
+texture = ExtResource("10_rl8v1")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="PeloMas" type="Sprite2D" parent="Visual/Cabeza" unique_id=202008923]
+texture = ExtResource("11_fckuw")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="Rol" type="Sprite2D" parent="Visual" unique_id=1565069385]
+position = Vector2(-2, 0)
+texture = ExtResource("13_7xo5g")
+flip_h = true
+hframes = 22
+metadata/_edit_lock_ = true
+
+[node name="Clase" type="Sprite2D" parent="Visual" unique_id=966723750]
+texture = ExtResource("12_cjt2x")
+hframes = 9
+metadata/_edit_lock_ = true

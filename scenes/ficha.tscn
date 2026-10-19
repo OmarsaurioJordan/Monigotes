@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://dvfjy1x8dpknj"]
+
+[ext_resource type="Script" uid="uid://bxlpbrdj73ybk" path="res://scripts/ficha.gd" id="1_2balv"]
+[ext_resource type="PackedScene" uid="uid://cojca4eb3xmwh" path="res://scenes/monigote.tscn" id="1_nkg04"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlgfc"]
+bg_color = Color(0.35906905, 0.35906908, 0.35906896, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4uen"]
+bg_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gudf1"]
+bg_color = Color(0.5971761, 0.59717613, 0.597176, 1)
+
+[node name="Ficha" type="Panel" unique_id=473155612]
+offset_left = 21.0
+offset_top = 35.0
+offset_right = 1045.0
+offset_bottom = 1870.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nlgfc")
+script = ExtResource("1_2balv")
+metadata/_edit_lock_ = true
+
+[node name="Fondo" type="Panel" parent="." unique_id=526639975 groups=["fondo"]]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 81.0
+offset_right = 991.0
+offset_bottom = 950.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d4uen")
+metadata/_edit_lock_ = true
+
+[node name="Suelo" type="Panel" parent="Fondo" unique_id=1095269486 groups=["fondo"]]
+layout_mode = 0
+offset_top = 739.0
+offset_right = 957.0
+offset_bottom = 869.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gudf1")
+metadata/_edit_lock_ = true
+
+[node name="Monigote" parent="Fondo" unique_id=1410172999 instance=ExtResource("1_nkg04")]
+position = Vector2(478.00003, 814)
+scale = Vector2(6, 6)
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=1396457438]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 975.0
+offset_right = 991.0
+offset_bottom = 1798.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Cont" type="VBoxContainer" parent="Scroll" unique_id=1721669047]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_lock_ = true
+
+[node name="BtnSalir" type="Button" parent="." unique_id=1797890964]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 32.0
+offset_right = 113.0
+offset_bottom = 127.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "<--"
+metadata/_edit_lock_ = true
+
+[node name="BtnAzar" type="Button" parent="." unique_id=1781985975]
+layout_mode = 0
+offset_left = 873.0
+offset_top = 45.0
+offset_right = 1005.0
+offset_bottom = 140.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "Azar"
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="BtnSalir" to="." method="_on_btn_salir_pressed"]
+[connection signal="pressed" from="BtnAzar" to="." method="_on_btn_azar_pressed"]

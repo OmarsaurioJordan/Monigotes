@@ -1,0 +1,151 @@
+extends Node2D
+
+var id: int = 0
+var nombre: String = ""
+var items: Dictionary = {
+	"genero": Master.GENERO.MUJER,
+	"orientacion": Master.ORIENTACION.HETEROSEX,
+	"elemento": Master.ELEMENTO.TIERRA,
+	"piel": Master.PIEL.MESTIZA,
+	"pelo": Master.PELO_F.MEDIANO,
+	"color_pelo": Master.COLOR.BLANCO,
+	"emocion": Master.EMOCION.NORMAL,
+	"traje": Master.TRAJE.CONJUNTO,
+	"torso": Master.TORSO_F.CAMISA,
+	"color_torso": Master.COLOR.BLANCO,
+	"bajo": Master.BAJO_F.CALZON,
+	"color_bajo": Master.COLOR.BLANCO,
+	"grupo": Master.GRUPO.GRUPO_A,
+	"uniforme": Master.UNIFORME_A.FEMENINO,
+	"clase": Master.CLASE.NADA,
+	"rol": Master.ROL.NINGUNA,
+	"color_fondo": Master.COLOR.BLANCO
+}
+
+func _ready() -> void:
+	actualizar()
+
+# set y get functions
+
+func get_item_keys() -> Array:
+	return items.keys()
+
+func get_item_data(item: String) -> int:
+	return items.get(item, 0)
+
+func set_item_data(item: String, data: int) -> void:
+	if items.has(item):
+		items.set(item, data)
+		actualizar()
+
+func is_fem() -> bool:
+	return items["genero"] == Master.GENERO.MUJER
+
+func is_grupo_a() -> bool:
+	return items["grupo"] == Master.GRUPO.GRUPO_A
+
+func is_conjunto() -> bool:
+	return items["traje"] == Master.TRAJE.CONJUNTO
+
+# funciones principales
+
+func actualizar() -> void:
+	# varias cosas
+	$Visual/Cuerpo/TorsoFem.frame = items["torso"]
+	$Visual/Cuerpo/TorsoMas.frame = items["torso"]
+	$Visual/Cuerpo/BajoFem.frame = items["bajo"]
+	$Visual/Cuerpo/BajoMas.frame = items["bajo"]
+	$Visual/Cuerpo/VestUno.frame = items["uniforme"]
+	$Visual/Cuerpo/VestDos.frame = items["uniforme"]
+	$Visual/Cabeza/PeloFem.frame = items["pelo"]
+	$Visual/Cabeza/PeloMas.frame = items["pelo"]
+	$Visual/Cabeza/Emocion.frame = items["emocion"]
+	$Visual/Rol.frame = items["rol"]
+	$Visual/Clase.frame = items["clase"]
+	# segun genero y tipo de vestimenta
+	$Visual/Cuerpo.frame = 1 if is_fem() else 7
+	$Visual/Cabeza.frame = 0 if is_fem() else 6
+	$Visual/Cabeza/PeloFem.visible = is_fem()
+	$Visual/Cuerpo/BajoFem.visible = is_fem() and is_conjunto()
+	$Visual/Cuerpo/TorsoFem.visible = is_fem() and is_conjunto()
+	$Visual/Cabeza/PeloMas.visible = not is_fem()
+	$Visual/Cuerpo/BajoMas.visible = not is_fem() and is_conjunto()
+	$Visual/Cuerpo/TorsoMas.visible = not is_fem() and is_conjunto()
+	$Visual/Cuerpo/VestUno.visible = not is_conjunto() and is_grupo_a()
+	$Visual/Cuerpo/VestDos.visible = not is_conjunto() and not is_grupo_a()
+	$Visual/Cuerpo/VestUno.frame = items["uniforme"] * 2 + (0 if is_fem() else 1)
+	$Visual/Cuerpo/VestDos.frame = items["uniforme"] * 2 + (0 if is_fem() else 1)
+	# color de piel
+	var la_piel := load("res://sprites/d_monigotin" + str(items["piel"] + 1) + ".png")
+	$Visual/Cuerpo.texture = la_piel
+	$Visual/Cabeza.texture = la_piel
+	$Visual/Cuerpo/Genital.texture = la_piel
+	# colores en RGB
+	var ccc: Color = Color.WHITE.lerp(Master.COLOR_RGB[items["color_torso"]], 0.85)
+	$Visual/Cuerpo/TorsoFem.self_modulate = ccc
+	$Visual/Cuerpo/TorsoMas.self_modulate = ccc
+	ccc = Color.WHITE.lerp(Master.COLOR_RGB[items["color_bajo"]], 0.85)
+	$Visual/Cuerpo/BajoFem.self_modulate = ccc
+	$Visual/Cuerpo/BajoMas.self_modulate = ccc
+	ccc = Color.WHITE.lerp(Master.COLOR_RGB[items["color_pelo"]], 0.85)
+	$Visual/Cabeza/PeloFem.self_modulate = ccc
+	$Visual/Cabeza/PeloMas.self_modulate = ccc
+	for fondo in get_tree().get_nodes_in_group("fondo"):
+		ccc = Color.WHITE.lerp(Master.COLOR_RGB[items["color_fondo"]], 0.5)
+		fondo.self_modulate = ccc
+	#presencia de genital
+	$Visual/Cuerpo/Genital.visible = not is_fem() and (
+		($Visual/Cuerpo/BajoMas.visible and $Visual/Cuerpo/BajoMas.frame == 0) or
+		($Visual/Cuerpo/VestDos.visible and $Visual/Cuerpo/VestDos.frame == 11)
+	)
+
+func guardar() -> void:
+	var archivo := FileAccess.open("user://p_" + str(id) + ".txt", FileAccess.WRITE)
+	if archivo == null:
+		return
+	var data: String = exportar()
+	archivo.store_string(data)
+	archivo.close()
+
+func abrir(el_id: int) -> void:
+	id = el_id
+	if not FileAccess.file_exists("user://p_" + str(id) + ".txt"):
+		return
+	var archivo := FileAccess.open("user://p_" + str(id) + ".txt", FileAccess.READ)
+	var data: String = archivo.get_as_text().replace("\n", "")
+	archivo.close()
+	importar(data)
+
+func exportar() -> String:
+	var codigo: String = nombre.replace(" ", "_") if nombre != "" else "?"
+	for item in items:
+		codigo += "," + str(items[item])
+	return codigo
+
+func importar(codigo: String) -> bool:
+	var data: Array = codigo.split(",")
+	if data.size() == 1 + items.size():
+		var i := 1
+		for item in items:
+			if data[i].is_valid_int():
+				items[item] = data[i].to_int()
+			else:
+				return false
+			i += 1
+		nombre = nombre_ok(data[0])
+		actualizar()
+		return true
+	return false
+
+# herramientas
+
+func nombre_ok(el_nombre: String) -> String:
+	var msk := "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789áéíóúÁÉÍÓÚ _"
+	var txt: String = ""
+	for chr in el_nombre:
+		if msk.contains(chr):
+			txt += chr
+	txt = txt.strip_edges().replace("_", " ")
+	if txt.length() > Master.NAME_LIMIT:
+		txt = txt.substr(0, Master.NAME_LIMIT)
+	return txt

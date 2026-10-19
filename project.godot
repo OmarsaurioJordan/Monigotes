@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Monigotines"
+run/main_scene="uid://boneawcgluvnc"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/window_width_override=432
+window/size/window_height_override=768
+window/stretch/mode="viewport"
+
+[global_group]
+
+fondo=""
+election=""
+
+[gui]
+
+theme/custom="uid://brq1rkgfys7t7"
+theme/custom_font="uid://darerbdrm6t46"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
