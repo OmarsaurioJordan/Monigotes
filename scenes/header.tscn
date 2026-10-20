@@ -1,0 +1,225 @@
+[gd_scene format=3 uid="uid://rw7ebph7ar2k"]
+
+[ext_resource type="Script" uid="uid://o28ksajnrjm4" path="res://scripts/header.gd" id="1_lwuuy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
+bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+border_width_left = 50
+border_width_top = 10
+border_width_right = 50
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tryrp"]
+bg_color = Color(0.89411765, 0.89411765, 0.89411765, 0.4392157)
+border_width_left = 20
+border_width_top = 10
+border_width_right = 20
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[node name="Header" type="VBoxContainer" unique_id=1166893592]
+script = ExtResource("1_lwuuy")
+metadata/_edit_lock_ = true
+
+[node name="Spr1" type="Label" parent="." unique_id=1734587786]
+custom_minimum_size = Vector2(0, 15)
+custom_maximum_size = Vector2(-1, 15)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Fnd1" type="PanelContainer" parent="." unique_id=590258266]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="Fnd1" unique_id=50361409]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Nombre" type="Label" parent="Fnd1/Cnt" unique_id=1814485313]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Nombre"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="HBoxContainer" parent="Fnd1/Cnt" unique_id=1282184245]
+layout_mode = 2
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="A" type="VBoxContainer" parent="Fnd1/Cnt/Cnt" unique_id=1983396019]
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_edit_lock_ = true
+
+[node name="Genero" type="Label" parent="Fnd1/Cnt/Cnt/A" unique_id=622783982]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Género"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Orient" type="Label" parent="Fnd1/Cnt/Cnt/A" unique_id=579680755]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Orientación"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Clase" type="Label" parent="Fnd1/Cnt/Cnt/A" unique_id=1159614246]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Clase"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="B" type="VBoxContainer" parent="Fnd1/Cnt/Cnt" unique_id=1652511194]
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_edit_lock_ = true
+
+[node name="Element" type="Label" parent="Fnd1/Cnt/Cnt/B" unique_id=589667316]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Elemento"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Emocion" type="Label" parent="Fnd1/Cnt/Cnt/B" unique_id=758433539]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Emoción"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Grupo" type="Label" parent="Fnd1/Cnt/Cnt/B" unique_id=300827680]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Grupo"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Spr2" type="Label" parent="." unique_id=372708236]
+custom_minimum_size = Vector2(0, 15)
+custom_maximum_size = Vector2(-1, 15)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Fnd2" type="PanelContainer" parent="." unique_id=1281631836]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="Fnd2" unique_id=1897196068]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Fnd2/Cnt" unique_id=1213535136]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "estadísticas"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="HBoxContainer" parent="Fnd2/Cnt" unique_id=453301149]
+layout_mode = 2
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="A" type="VBoxContainer" parent="Fnd2/Cnt/Cnt" unique_id=8803906]
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_edit_lock_ = true
+
+[node name="Vida" type="Label" parent="Fnd2/Cnt/Cnt/A" unique_id=541027498]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Vida"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Defensa" type="Label" parent="Fnd2/Cnt/Cnt/A" unique_id=1886754861]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Defensa"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Bloqueo" type="Label" parent="Fnd2/Cnt/Cnt/A" unique_id=1911361077]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Bloqueo"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="B" type="VBoxContainer" parent="Fnd2/Cnt/Cnt" unique_id=538418246]
+layout_mode = 2
+size_flags_horizontal = 3
+metadata/_edit_lock_ = true
+
+[node name="Movim" type="Label" parent="Fnd2/Cnt/Cnt/B" unique_id=556023413]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Movimiento"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Ataque" type="Label" parent="Fnd2/Cnt/Cnt/B" unique_id=491304426]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Ataque"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Distancia" type="Label" parent="Fnd2/Cnt/Cnt/B" unique_id=1673319327]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "Distancia"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true

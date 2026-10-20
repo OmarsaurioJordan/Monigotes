@@ -53,6 +53,9 @@ func _process(delta: float) -> void:
 
 # set y get functions
 
+func get_items() -> Dictionary:
+	return items.duplicate(true)
+
 func get_actualiza() -> Dictionary:
 	var ccc = [
 		Color(0.724, 0.714, 0.321, 1.0),

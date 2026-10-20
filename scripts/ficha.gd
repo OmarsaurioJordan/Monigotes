@@ -4,6 +4,8 @@ const ELECTION := preload("res://scenes/elect.tscn")
 const NOMENCLA := preload("res://scenes/nomencla.tscn")
 const BTN_OK := preload("res://scenes/btn_ok.tscn")
 const PIEPAG := preload("res://scenes/piepag.tscn")
+const HEADER := preload("res://scenes/header.tscn")
+const HABILIS := preload("res://scenes/habilidades.tscn")
 
 func get_monigote() -> Node:
 	return $Fondo/Monigote
@@ -13,7 +15,23 @@ func init_ficha(ind: int) -> void:
 	if not $Fondo/Monigote.abrir(ind):
 		queue_free()
 	# cargar datos del monigote
-	
+	var header := HEADER.instantiate()
+	$Scroll/Cont.add_child(header)
+	header.set_data($Fondo/Monigote)
+	# colocar habilidades
+	var items = $Fondo/Monigote.get_items()
+	var habilis := HABILIS.instantiate()
+	add_child(habilis)
+	var nodo: Node = habilis.get_elemento(items["elemento"])
+	$Scroll/Cont.add_child(habilis.new_separador())
+	$Scroll/Cont.add_child(nodo)
+	nodo = habilis.get_clase(items["clase"])
+	$Scroll/Cont.add_child(habilis.new_separador())
+	$Scroll/Cont.add_child(nodo)
+	nodo = habilis.get_rol(items["rol"])
+	$Scroll/Cont.add_child(habilis.new_separador())
+	$Scroll/Cont.add_child(nodo)
+	habilis.queue_free()
 	# poner pie de pagina
 	var piepag := PIEPAG.instantiate()
 	$Scroll/Cont.add_child(piepag)

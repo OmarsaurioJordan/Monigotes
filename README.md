@@ -2,9 +2,8 @@
 
 ## Tareas
 
-- en ficha de monigote poner: nombre, genero, orient, elemento, grupo o emocion
-- en ficha de monigote poner estadisticas: vida, defensa, ataque, distancia, movimientos
-- en ficha de monigote poner las habilidades, ya creada la escena
+- en ficha de monigote poner datos básicos
+- en ficha de monigote poner estadisticas
 - hacer manual de habilidades generales, ya está la clase con habilidades
 - hacer partículas según elemento en ficha monigote
 - al crear monigote ir a su ficha, no solo a admin
