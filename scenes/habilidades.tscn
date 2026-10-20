@@ -1,0 +1,1266 @@
+[gd_scene format=3 uid="uid://7vc2llls2jcy"]
+
+[ext_resource type="Texture2D" uid="uid://b6su8xji01p7" path="res://sprites/rol.png" id="1_mrihd"]
+[ext_resource type="Texture2D" uid="uid://bvevx3e0n3gu5" path="res://sprites/clase.png" id="2_57ryq"]
+[ext_resource type="Texture2D" uid="uid://yiuja1lso552" path="res://sprites/elementos.png" id="3_57ryq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
+bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+border_width_left = 50
+border_width_top = 10
+border_width_right = 50
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g1ui7"]
+bg_color = Color(0.89411765, 0.89411765, 0.89411765, 0.4392157)
+border_width_left = 20
+border_width_top = 10
+border_width_right = 20
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[node name="Habilidades" type="Control" unique_id=292843833]
+layout_mode = 3
+anchors_preset = 0
+metadata/_edit_lock_ = true
+
+[node name="Spr" type="Label" parent="." unique_id=605252510]
+custom_minimum_size = Vector2(0, 15)
+custom_maximum_size = Vector2(-1, 15)
+layout_mode = 0
+offset_left = 1120.527
+offset_top = -93.149506
+offset_right = 1121.527
+offset_bottom = -78.149506
+metadata/_edit_lock_ = true
+
+[node name="HabRol" type="VBoxContainer" parent="." unique_id=1322014004]
+layout_mode = 0
+offset_left = 1118.0
+offset_top = 45.0
+offset_right = 2077.0
+offset_bottom = 1878.0
+metadata/_edit_lock_ = true
+
+[node name="H1" type="PanelContainer" parent="HabRol" unique_id=590258266]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H1" unique_id=50361409]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H1/Cnt" unique_id=524555131]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H1/Cnt" unique_id=153563609]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H1/Cnt" unique_id=1794506875]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 1
+metadata/_edit_lock_ = true
+
+[node name="H2" type="PanelContainer" parent="HabRol" unique_id=927657014]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H2" unique_id=53130415]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H2/Cnt" unique_id=1518420158]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H2/Cnt" unique_id=714934290]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H2/Cnt" unique_id=286917320]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 2
+metadata/_edit_lock_ = true
+
+[node name="H3" type="PanelContainer" parent="HabRol" unique_id=1371348427]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H3" unique_id=890790736]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H3/Cnt" unique_id=1266237025]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H3/Cnt" unique_id=1978880121]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H3/Cnt" unique_id=1638202315]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 3
+metadata/_edit_lock_ = true
+
+[node name="H4" type="PanelContainer" parent="HabRol" unique_id=353477060]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H4" unique_id=1128949747]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H4/Cnt" unique_id=1504808912]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H4/Cnt" unique_id=248046937]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H4/Cnt" unique_id=460488989]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 4
+metadata/_edit_lock_ = true
+
+[node name="H5" type="PanelContainer" parent="HabRol" unique_id=223602875]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H5" unique_id=18933611]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H5/Cnt" unique_id=288278962]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H5/Cnt" unique_id=203206360]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H5/Cnt" unique_id=1934056902]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 5
+metadata/_edit_lock_ = true
+
+[node name="H6" type="PanelContainer" parent="HabRol" unique_id=1633920900]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H6" unique_id=598046178]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H6/Cnt" unique_id=2125576398]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H6/Cnt" unique_id=268931110]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H6/Cnt" unique_id=1782874218]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 6
+metadata/_edit_lock_ = true
+
+[node name="H7" type="PanelContainer" parent="HabRol" unique_id=1977109724]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H7" unique_id=968211309]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H7/Cnt" unique_id=1095184373]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H7/Cnt" unique_id=642134604]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H7/Cnt" unique_id=904843446]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 7
+metadata/_edit_lock_ = true
+
+[node name="H8" type="PanelContainer" parent="HabRol" unique_id=1828546200]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H8" unique_id=1531188283]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H8/Cnt" unique_id=913212565]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H8/Cnt" unique_id=668225895]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H8/Cnt" unique_id=763468405]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 8
+metadata/_edit_lock_ = true
+
+[node name="H9" type="PanelContainer" parent="HabRol" unique_id=787753043]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H9" unique_id=102438908]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H9/Cnt" unique_id=921741351]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H9/Cnt" unique_id=28351517]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H9/Cnt" unique_id=140462811]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 9
+metadata/_edit_lock_ = true
+
+[node name="H10" type="PanelContainer" parent="HabRol" unique_id=918068790]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H10" unique_id=1438562990]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H10/Cnt" unique_id=1348528506]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H10/Cnt" unique_id=1588677142]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H10/Cnt" unique_id=580859223]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 10
+metadata/_edit_lock_ = true
+
+[node name="H11" type="PanelContainer" parent="HabRol" unique_id=77104846]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H11" unique_id=1566527890]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H11/Cnt" unique_id=1851407777]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H11/Cnt" unique_id=1135400871]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H11/Cnt" unique_id=1077228409]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 11
+metadata/_edit_lock_ = true
+
+[node name="H12" type="PanelContainer" parent="HabRol" unique_id=278431658]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H12" unique_id=1650422012]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H12/Cnt" unique_id=1017380193]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H12/Cnt" unique_id=608887735]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H12/Cnt" unique_id=2034942866]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 12
+metadata/_edit_lock_ = true
+
+[node name="H13" type="PanelContainer" parent="HabRol" unique_id=1180329410]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H13" unique_id=2121386343]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H13/Cnt" unique_id=1172454360]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H13/Cnt" unique_id=1636193943]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H13/Cnt" unique_id=1131614490]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 13
+metadata/_edit_lock_ = true
+
+[node name="H14" type="PanelContainer" parent="HabRol" unique_id=214717031]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H14" unique_id=1173131290]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H14/Cnt" unique_id=88403261]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H14/Cnt" unique_id=1756768206]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H14/Cnt" unique_id=615538098]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 14
+metadata/_edit_lock_ = true
+
+[node name="H15" type="PanelContainer" parent="HabRol" unique_id=866770535]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H15" unique_id=1056632798]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H15/Cnt" unique_id=1955530425]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H15/Cnt" unique_id=1083086262]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H15/Cnt" unique_id=1023263409]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 15
+metadata/_edit_lock_ = true
+
+[node name="H16" type="PanelContainer" parent="HabRol" unique_id=91958976]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H16" unique_id=1654266413]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H16/Cnt" unique_id=206425077]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H16/Cnt" unique_id=457303635]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H16/Cnt" unique_id=1575043483]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 16
+metadata/_edit_lock_ = true
+
+[node name="H17" type="PanelContainer" parent="HabRol" unique_id=1675976967]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H17" unique_id=1326685656]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H17/Cnt" unique_id=1154293099]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H17/Cnt" unique_id=2141466910]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H17/Cnt" unique_id=1537272313]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 17
+metadata/_edit_lock_ = true
+
+[node name="H18" type="PanelContainer" parent="HabRol" unique_id=2143931472]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H18" unique_id=1430891374]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H18/Cnt" unique_id=1947438388]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H18/Cnt" unique_id=1479306641]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H18/Cnt" unique_id=711165245]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 18
+metadata/_edit_lock_ = true
+
+[node name="H19" type="PanelContainer" parent="HabRol" unique_id=1915262629]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H19" unique_id=1017491902]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H19/Cnt" unique_id=689045076]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H19/Cnt" unique_id=59332298]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H19/Cnt" unique_id=1951481778]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 19
+metadata/_edit_lock_ = true
+
+[node name="H20" type="PanelContainer" parent="HabRol" unique_id=1966208726]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H20" unique_id=972139140]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H20/Cnt" unique_id=1613438849]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H20/Cnt" unique_id=1757902085]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H20/Cnt" unique_id=1797337874]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 20
+metadata/_edit_lock_ = true
+
+[node name="H21" type="PanelContainer" parent="HabRol" unique_id=1131550794]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabRol/H21" unique_id=778045164]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabRol/H21/Cnt" unique_id=1340820878]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabRol/H21/Cnt" unique_id=1337354236]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabRol/H21/Cnt" unique_id=823059128]
+position = Vector2(68, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mrihd")
+flip_h = true
+hframes = 22
+frame = 21
+metadata/_edit_lock_ = true
+
+[node name="HabClase" type="VBoxContainer" parent="." unique_id=1261839828]
+layout_mode = 0
+offset_left = 2133.0
+offset_top = 41.0
+offset_right = 3092.0
+offset_bottom = 1874.0
+metadata/_edit_lock_ = true
+
+[node name="H1" type="PanelContainer" parent="HabClase" unique_id=771801771]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H1" unique_id=1465008071]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H1/Cnt" unique_id=109408062]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H1/Cnt" unique_id=131833750]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H1/Cnt" unique_id=816590968]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 1
+metadata/_edit_lock_ = true
+
+[node name="H2" type="PanelContainer" parent="HabClase" unique_id=1971157750]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H2" unique_id=1791008169]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H2/Cnt" unique_id=848157509]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H2/Cnt" unique_id=979946529]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H2/Cnt" unique_id=2007362076]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 2
+metadata/_edit_lock_ = true
+
+[node name="H3" type="PanelContainer" parent="HabClase" unique_id=97106318]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H3" unique_id=1522798789]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H3/Cnt" unique_id=639087022]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H3/Cnt" unique_id=133545737]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H3/Cnt" unique_id=506634263]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 3
+metadata/_edit_lock_ = true
+
+[node name="H4" type="PanelContainer" parent="HabClase" unique_id=1009147472]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H4" unique_id=946370233]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H4/Cnt" unique_id=601065794]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H4/Cnt" unique_id=417232332]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H4/Cnt" unique_id=1163231728]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 4
+metadata/_edit_lock_ = true
+
+[node name="H5" type="PanelContainer" parent="HabClase" unique_id=1004960786]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H5" unique_id=834567445]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H5/Cnt" unique_id=1032098873]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H5/Cnt" unique_id=1856277711]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H5/Cnt" unique_id=1139869165]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 5
+metadata/_edit_lock_ = true
+
+[node name="H6" type="PanelContainer" parent="HabClase" unique_id=165808078]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H6" unique_id=473166934]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H6/Cnt" unique_id=501931120]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H6/Cnt" unique_id=1922249232]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H6/Cnt" unique_id=361094736]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 6
+metadata/_edit_lock_ = true
+
+[node name="H7" type="PanelContainer" parent="HabClase" unique_id=153029838]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H7" unique_id=1243014613]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H7/Cnt" unique_id=1613896915]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H7/Cnt" unique_id=1364276950]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H7/Cnt" unique_id=300002593]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 7
+metadata/_edit_lock_ = true
+
+[node name="H8" type="PanelContainer" parent="HabClase" unique_id=873648846]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabClase/H8" unique_id=412838422]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabClase/H8/Cnt" unique_id=968431249]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabClase/H8/Cnt" unique_id=1438668652]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabClase/H8/Cnt" unique_id=682691675]
+position = Vector2(27, -22)
+scale = Vector2(2, 2)
+texture = ExtResource("2_57ryq")
+hframes = 9
+frame = 8
+metadata/_edit_lock_ = true
+
+[node name="HabElemento" type="VBoxContainer" parent="." unique_id=2043566968]
+layout_mode = 0
+offset_left = 3137.0
+offset_top = 41.0
+offset_right = 4096.0
+offset_bottom = 1874.0
+metadata/_edit_lock_ = true
+
+[node name="H1" type="PanelContainer" parent="HabElemento" unique_id=141057765]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabElemento/H1" unique_id=869784703]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabElemento/H1/Cnt" unique_id=478172681]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabElemento/H1/Cnt" unique_id=1935731893]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabElemento/H1/Cnt" unique_id=1166487671]
+position = Vector2(32, 43)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_57ryq")
+hframes = 4
+
+[node name="H2" type="PanelContainer" parent="HabElemento" unique_id=775792966]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabElemento/H2" unique_id=572115375]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabElemento/H2/Cnt" unique_id=256776609]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabElemento/H2/Cnt" unique_id=387858717]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabElemento/H2/Cnt" unique_id=1206932415]
+position = Vector2(32, 43)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_57ryq")
+hframes = 4
+frame = 1
+
+[node name="H3" type="PanelContainer" parent="HabElemento" unique_id=1805403155]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabElemento/H3" unique_id=364548686]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabElemento/H3/Cnt" unique_id=1037624116]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabElemento/H3/Cnt" unique_id=1941619329]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabElemento/H3/Cnt" unique_id=610654691]
+position = Vector2(32, 43)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_57ryq")
+hframes = 4
+frame = 2
+
+[node name="H4" type="PanelContainer" parent="HabElemento" unique_id=985409591]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="VBoxContainer" parent="HabElemento/H4" unique_id=2068931726]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabElemento/H4/Cnt" unique_id=265100905]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabElemento/H4/Cnt" unique_id=596831672]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabElemento/H4/Cnt" unique_id=249483538]
+position = Vector2(32, 43)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_57ryq")
+hframes = 4
+frame = 3

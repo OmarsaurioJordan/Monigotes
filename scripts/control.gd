@@ -1,5 +1,7 @@
 extends Control
 
+const ADMIN := preload("res://scenes/admin.tscn")
+
 var id_master: int = 0
 
 func _ready() -> void:
@@ -28,3 +30,10 @@ func get_new_id() -> int:
 	id_master += 1
 	guardar()
 	return id_master
+
+func _on_btn_admin_pressed() -> void:
+	var admin := ADMIN.instantiate()
+	add_child(admin)
+
+func _on_btn_habili_pressed() -> void:
+	pass

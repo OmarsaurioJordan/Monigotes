@@ -1,5 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://brq1rkgfys7t7"]
 
+[ext_resource type="FontFile" uid="uid://darerbdrm6t46" path="res://sprites/comic_sana.ttf" id="1_2a32s"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1q6hf"]
 bg_color = Color(0.6148984, 0.6656343, 0.53238654, 1)
 corner_radius_top_left = 20
@@ -86,3 +88,9 @@ LineEdit/font_sizes/font_size = 40
 LineEdit/styles/focus = SubResource("StyleBoxFlat_tryrp")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_6lrop")
 LineEdit/styles/read_only = SubResource("StyleBoxFlat_jyksl")
+PopupMenu/font_sizes/font_separator_size = 35
+PopupMenu/font_sizes/font_size = 35
+PopupMenu/font_sizes/title_font_size = 35
+PopupMenu/fonts/font = ExtResource("1_2a32s")
+PopupMenu/fonts/font_separator = ExtResource("1_2a32s")
+PopupMenu/fonts/title_font = ExtResource("1_2a32s")

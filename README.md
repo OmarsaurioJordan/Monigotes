@@ -2,14 +2,13 @@
 
 ## Tareas
 
-- animación del monigote
-- hacer partículas según elemento
-- botón de guardado de monigote
-- menú principal con título, botón de admin monigotes, botón de ver habilidades
-- admin monigotes donde se ve la lista de todos, y botón de crear nuevo
-- ver ficha de monigote creado, incluye habilidades
-- hacer manual de habilidades generales
-- poder eliminar monigote desde su ficha
+- en ficha de monigote poner: nombre, genero, orient, elemento, grupo o emocion
+- en ficha de monigote poner estadisticas: vida, defensa, ataque, distancia, movimientos
+- en ficha de monigote poner las habilidades, ya creada la escena
+- hacer manual de habilidades generales, ya está la clase con habilidades
+- hacer partículas según elemento en ficha monigote
+- al crear monigote ir a su ficha, no solo a admin
+- escribir todas las habilidades, redactar, ya está la clase
 
 ## Licencia
 

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://boneawcgluvnc"]
 
-[ext_resource type="PackedScene" uid="uid://dvfjy1x8dpknj" path="res://scenes/ficha.tscn" id="1_5p55f"]
 [ext_resource type="Script" uid="uid://b2v68jckhdfwr" path="res://scripts/control.gd" id="1_r67kn"]
+[ext_resource type="Texture2D" uid="uid://dnwg8ds4qqilr" path="res://sprites/suelo.png" id="2_r67kn"]
 
-[node name="Control" type="Control" unique_id=1572215301]
+[node name="Control" type="Control" unique_id=1572215301 groups=["control"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,9 +13,83 @@ grow_vertical = 2
 script = ExtResource("1_r67kn")
 metadata/_edit_lock_ = true
 
-[node name="Ficha" parent="." unique_id=911933620 instance=ExtResource("1_5p55f")]
+[node name="Fondo" type="TextureRect" parent="." unique_id=769893569]
+self_modulate = Color(0.6119289, 0.6620013, 0.6221211, 1)
 layout_mode = 0
-offset_left = 27.0
-offset_top = 49.0
-offset_right = 1051.0
-offset_bottom = 1884.0
+offset_right = 1080.0
+offset_bottom = 1919.0
+texture = ExtResource("2_r67kn")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="." unique_id=876524551]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 27.0
+offset_right = 1052.0
+offset_bottom = 291.0
+theme_override_font_sizes/font_size = 100
+text = "Monigotes"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Creditos" type="Label" parent="." unique_id=1028986256]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 1824.0
+offset_right = 1022.0
+offset_bottom = 1900.0
+text = "by Omwekiatl 2026"
+horizontal_alignment = 2
+metadata/_edit_lock_ = true
+
+[node name="Menu" type="VBoxContainer" parent="." unique_id=1386689342]
+layout_mode = 0
+offset_left = 207.0
+offset_top = 528.0
+offset_right = 907.0
+offset_bottom = 1424.0
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Menu" unique_id=1968982065]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "MENÚ"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Spr1" type="Label" parent="Menu" unique_id=926479912]
+custom_minimum_size = Vector2(0, 60)
+custom_maximum_size = Vector2(-1, 60)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="BtnAdmin" type="Button" parent="Menu" unique_id=55349938]
+custom_minimum_size = Vector2(700, 80)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 50
+text = "MONIGOTES"
+metadata/_edit_lock_ = true
+
+[node name="Spr2" type="Label" parent="Menu" unique_id=1508544336]
+custom_minimum_size = Vector2(0, 60)
+custom_maximum_size = Vector2(-1, 60)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="BtnHabili" type="Button" parent="Menu" unique_id=1134573983]
+custom_minimum_size = Vector2(700, 80)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 50
+text = "HABILIDADES"
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Menu/BtnAdmin" to="." method="_on_btn_admin_pressed"]
+[connection signal="pressed" from="Menu/BtnHabili" to="." method="_on_btn_habili_pressed"]

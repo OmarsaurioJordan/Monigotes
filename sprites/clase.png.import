@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpunnr0r0wj0a"
-path="res://.godot/imported/d_monigotin_sombra.png-3147faaef2f0ea17fbe75cdfcdb5912e.ctex"
+uid="uid://bvevx3e0n3gu5"
+path="res://.godot/imported/clase.png-6485b7bec15782d826066b2fbcb6d6f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/d_monigotin_sombra.png"
-dest_files=["res://.godot/imported/d_monigotin_sombra.png-3147faaef2f0ea17fbe75cdfcdb5912e.ctex"]
+source_file="res://sprites/clase.png"
+dest_files=["res://.godot/imported/clase.png-6485b7bec15782d826066b2fbcb6d6f5.ctex"]
 
 [params]
 

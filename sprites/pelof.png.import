@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b74o73eqa8p73"
-path="res://.godot/imported/d_monigotin_torsof.png-73ab60fe368bb48c1c9029119558c60e.ctex"
+uid="uid://c8giv1bpwgapo"
+path="res://.godot/imported/pelof.png-a6cc00bd76e5c4b8b28bd5c953de1232.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/d_monigotin_torsof.png"
-dest_files=["res://.godot/imported/d_monigotin_torsof.png-73ab60fe368bb48c1c9029119558c60e.ctex"]
+source_file="res://sprites/pelof.png"
+dest_files=["res://.godot/imported/pelof.png-a6cc00bd76e5c4b8b28bd5c953de1232.ctex"]
 
 [params]
 

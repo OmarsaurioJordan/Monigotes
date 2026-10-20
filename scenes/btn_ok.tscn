@@ -1,5 +1,12 @@
 [gd_scene format=3 uid="uid://bocsr3616fbnd"]
 
+[sub_resource type="GDScript" id="GDScript_57ryq"]
+script/source = "extends VBoxContainer
+
+func get_boton() -> Node:
+	return $Fnd/Cnt/BtnOk
+"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
 bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
 border_width_left = 50
@@ -10,6 +17,7 @@ border_color = Color(0, 0, 0, 0)
 border_blend = true
 
 [node name="BtnOk" type="VBoxContainer" unique_id=1166893592]
+script = SubResource("GDScript_57ryq")
 metadata/_edit_lock_ = true
 
 [node name="Spr" type="Label" parent="." unique_id=1734587786]
@@ -36,10 +44,16 @@ vertical_alignment = 1
 clip_text = true
 metadata/_edit_lock_ = true
 
-[node name="Button" type="Button" parent="Fnd/Cnt" unique_id=684417269]
+[node name="BtnOk" type="Button" parent="Fnd/Cnt" unique_id=684417269]
 custom_minimum_size = Vector2(700, 80)
 layout_mode = 2
 focus_mode = 0
 mouse_default_cursor_shape = 2
 text = "GUARDAR"
+metadata/_edit_lock_ = true
+
+[node name="Spr" type="Label" parent="Fnd/Cnt" unique_id=1506086146]
+custom_minimum_size = Vector2(0, 15)
+custom_maximum_size = Vector2(-1, 15)
+layout_mode = 2
 metadata/_edit_lock_ = true

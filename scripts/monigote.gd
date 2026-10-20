@@ -1,5 +1,8 @@
 extends Node2D
 
+const SPEED_ANIMA: float = 0.5
+const AMPLI_ANIMA: float = 3.0
+
 var id: int = 0
 var nombre: String = ""
 var items: Dictionary = {
@@ -8,7 +11,7 @@ var items: Dictionary = {
 	"elemento": Master.ELEMENTO.TIERRA,
 	"piel": Master.PIEL.MESTIZA,
 	"pelo": Master.PELO_F.MEDIANO,
-	"color_pelo": Master.COLOR.BLANCO,
+	"color_pelo": Master.COLOR.NEGRO,
 	"emocion": Master.EMOCION.NORMAL,
 	"traje": Master.TRAJE.CONJUNTO,
 	"torso": Master.TORSO_F.CAMISA,
@@ -22,10 +25,61 @@ var items: Dictionary = {
 	"color_fondo": Master.COLOR.BLANCO
 }
 
+var speed: Array = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+var anima: Array = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
 func _ready() -> void:
+	for s in range(speed.size()):
+		speed[s] = SPEED_ANIMA + randf_range(-0.1, 0.1)
+		anima[s] = randf()
 	actualizar()
 
+func _process(delta: float) -> void:
+	# mover la marca temporal de animacion
+	for s in range(speed.size()):
+		anima[s] += speed[s] * delta
+		while anima[s] > 1:
+			anima[s] -= 1.0
+	# colocar la animacion en el monigote
+	$Visual/Cabeza.position.y = AMPLI_ANIMA * sin(2.0 * PI * anima[0])
+	$Visual/Clase.position.x = AMPLI_ANIMA * sin(2.0 * PI * anima[1])
+	$Visual/Clase.position.y = AMPLI_ANIMA * sin(2.0 * PI * anima[2])
+	$Visual/Rol.position.x = AMPLI_ANIMA * sin(2.0 * PI * anima[3])
+	$Visual/Rol.position.y = AMPLI_ANIMA * sin(2.0 * PI * anima[4])
+	$Visual.scale = Vector2(
+		1.0 + 0.015 * sin(2.0 * PI * anima[5]),
+		1.0 + 0.015 * cos(2.0 * PI * anima[5])
+	)
+
 # set y get functions
+
+func get_actualiza() -> Dictionary:
+	var ccc = [
+		Color(0.724, 0.714, 0.321, 1.0),
+		Color(0.231, 0.384, 0.801, 1.0),
+		Color(0.247, 0.523, 0.259, 1.0),
+		Color(0.609, 0.255, 0.202, 1.0)
+	]
+	return {
+		"cabeza_texture": $Visual/Cabeza.texture,
+		"cabeza_frame": $Visual/Cabeza.frame,
+		"emocion_frame": $Visual/Cabeza/Emocion.frame,
+		"pelofem_frame": $Visual/Cabeza/PeloFem.frame,
+		"pelofem_color": $Visual/Cabeza/PeloFem.self_modulate,
+		"pelofem_visible": $Visual/Cabeza/PeloFem.visible,
+		"pelomas_frame": $Visual/Cabeza/PeloMas.frame,
+		"pelomas_color": $Visual/Cabeza/PeloMas.self_modulate,
+		"pelomas_visible": $Visual/Cabeza/PeloMas.visible,
+		"clase_frame": $Visual/Clase.frame,
+		"rol_frame": $Visual/Rol.frame,
+		"fondo_color": Color.WHITE.lerp(ccc[items["elemento"]], 0.25)
+	}
+
+func get_nombre() -> String:
+	return nombre
+
+func set_nombre(el_nombre: String) -> void:
+	nombre = nombre_ok(el_nombre)
 
 func get_item_keys() -> Array:
 	return items.keys()
@@ -76,7 +130,7 @@ func actualizar() -> void:
 	$Visual/Cuerpo/VestUno.frame = items["uniforme"] * 2 + (0 if is_fem() else 1)
 	$Visual/Cuerpo/VestDos.frame = items["uniforme"] * 2 + (0 if is_fem() else 1)
 	# color de piel
-	var la_piel := load("res://sprites/d_monigotin" + str(items["piel"] + 1) + ".png")
+	var la_piel := load("res://sprites/moni" + str(items["piel"] + 1) + ".png")
 	$Visual/Cuerpo.texture = la_piel
 	$Visual/Cabeza.texture = la_piel
 	$Visual/Cuerpo/Genital.texture = la_piel
@@ -99,25 +153,34 @@ func actualizar() -> void:
 		($Visual/Cuerpo/VestDos.visible and $Visual/Cuerpo/VestDos.frame == 11)
 	)
 
-func guardar() -> void:
+func crear_nuevo() -> void:
+	var ctrl: Node = get_tree().get_nodes_in_group("control")[0]
+	id = ctrl.get_new_id()
+	guardar()
+
+func guardar() -> bool:
 	var archivo := FileAccess.open("user://p_" + str(id) + ".txt", FileAccess.WRITE)
 	if archivo == null:
-		return
+		return false
 	var data: String = exportar()
 	archivo.store_string(data)
 	archivo.close()
+	return true
 
-func abrir(el_id: int) -> void:
+func abrir(el_id: int) -> bool:
 	id = el_id
 	if not FileAccess.file_exists("user://p_" + str(id) + ".txt"):
-		return
+		return false
 	var archivo := FileAccess.open("user://p_" + str(id) + ".txt", FileAccess.READ)
 	var data: String = archivo.get_as_text().replace("\n", "")
 	archivo.close()
 	importar(data)
+	return true
 
 func exportar() -> String:
-	var codigo: String = nombre.replace(" ", "_") if nombre != "" else "?"
+	var codigo: String = "?"
+	if nombre.replace(" ", "_") != "":
+		codigo = nombre.replace(" ", "_")
 	for item in items:
 		codigo += "," + str(items[item])
 	return codigo
@@ -136,6 +199,14 @@ func importar(codigo: String) -> bool:
 		actualizar()
 		return true
 	return false
+
+func eliminar() -> bool:
+	if not FileAccess.file_exists("user://p_" + str(id) + ".txt"):
+		return false
+	var error := DirAccess.remove_absolute(
+		ProjectSettings.globalize_path("user://p_" + str(id) + ".txt")
+	)
+	return error == OK
 
 # herramientas
 

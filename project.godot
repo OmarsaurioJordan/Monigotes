@@ -28,6 +28,9 @@ window/stretch/mode="viewport"
 
 fondo=""
 election=""
+control=""
+admin=""
+ficha=""
 
 [gui]
 

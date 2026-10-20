@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://dgh42lenh6xtp"]
+
+[ext_resource type="Script" uid="uid://d1jtf781um3dq" path="res://scripts/fichin.gd" id="1_fpeej"]
+[ext_resource type="Texture2D" uid="uid://c7hqa730lcchw" path="res://sprites/moni1.png" id="1_kg4bl"]
+[ext_resource type="Texture2D" uid="uid://npdib7fg6lw" path="res://sprites/emocion.png" id="2_sptvr"]
+[ext_resource type="Texture2D" uid="uid://c8giv1bpwgapo" path="res://sprites/pelof.png" id="3_fpeej"]
+[ext_resource type="Texture2D" uid="uid://dvakpwj021jtp" path="res://sprites/pelom.png" id="4_ok7li"]
+[ext_resource type="Texture2D" uid="uid://bvevx3e0n3gu5" path="res://sprites/clase.png" id="5_sptvr"]
+[ext_resource type="Texture2D" uid="uid://b6su8xji01p7" path="res://sprites/rol.png" id="7_ok7li"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
+bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+border_width_left = 50
+border_width_top = 10
+border_width_right = 50
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fhc8y"]
+bg_color = Color(0.77120435, 0.76718384, 0.7016412, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Fichin" type="VBoxContainer" unique_id=922205584]
+script = ExtResource("1_fpeej")
+metadata/_edit_lock_ = true
+
+[node name="Spr" type="Label" parent="." unique_id=1680578206]
+custom_minimum_size = Vector2(0, 15)
+custom_maximum_size = Vector2(-1, 15)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Fnd" type="PanelContainer" parent="." unique_id=28095194]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="HBoxContainer" parent="Fnd" unique_id=1568603724]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Fondo" type="PanelContainer" parent="Fnd/Cnt" unique_id=1595609342]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fhc8y")
+metadata/_edit_lock_ = true
+
+[node name="Cabeza" type="Sprite2D" parent="Fnd/Cnt/Fondo" unique_id=1906124825]
+position = Vector2(82, 84)
+scale = Vector2(2, 2)
+texture = ExtResource("1_kg4bl")
+hframes = 13
+frame = 6
+metadata/_edit_lock_ = true
+
+[node name="Emocion" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=1713657860]
+texture = ExtResource("2_sptvr")
+hframes = 33
+metadata/_edit_lock_ = true
+
+[node name="PeloFem" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=727311669]
+texture = ExtResource("3_fpeej")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="PeloMas" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=2012572241]
+texture = ExtResource("4_ok7li")
+hframes = 16
+metadata/_edit_lock_ = true
+
+[node name="Clase" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=470666030]
+position = Vector2(16, -16)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_sptvr")
+hframes = 9
+metadata/_edit_lock_ = true
+
+[node name="Rol" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=84033922]
+position = Vector2(-20, -8)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_ok7li")
+flip_h = true
+hframes = 22
+metadata/_edit_lock_ = true
+
+[node name="Nombre" type="Label" parent="Fnd/Cnt" unique_id=882235562]
+custom_minimum_size = Vector2(600, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Nombre o Nickame"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="BtnVer" type="Button" parent="Fnd/Cnt" unique_id=1360967367]
+custom_minimum_size = Vector2(0, 80)
+custom_maximum_size = Vector2(-1, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "Ver"
+metadata/_edit_lock_ = true

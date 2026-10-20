@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cojca4eb3xmwh" path="res://scenes/monigote.tscn" id="1_nkg04"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlgfc"]
-bg_color = Color(0.35906905, 0.35906908, 0.35906896, 1)
+bg_color = Color(0.37039852, 0.3648877, 0.29905024, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
@@ -21,7 +21,15 @@ bg_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gudf1"]
 bg_color = Color(0.5971761, 0.59717613, 0.597176, 1)
 
-[node name="Ficha" type="Panel" unique_id=473155612]
+[sub_resource type="GDScript" id="GDScript_3btkx"]
+script/source = "extends ScrollContainer
+
+func _ready() -> void:
+	var barra := get_v_scroll_bar()
+	barra.custom_minimum_size.x = 24
+"
+
+[node name="Ficha" type="Panel" unique_id=473155612 groups=["ficha"]]
 offset_left = 21.0
 offset_top = 35.0
 offset_right = 1045.0
@@ -59,6 +67,7 @@ offset_right = 991.0
 offset_bottom = 1798.0
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 2
+script = SubResource("GDScript_3btkx")
 metadata/_edit_lock_ = true
 
 [node name="Cont" type="VBoxContainer" parent="Scroll" unique_id=1721669047]

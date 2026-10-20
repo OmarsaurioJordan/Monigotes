@@ -5,6 +5,12 @@ script/source = "extends VBoxContainer
 
 func _ready() -> void:
 	$Fnd/Cnt/Data.max_length = Master.NAME_LIMIT
+
+func get_nombre() -> String:
+	return $Fnd/Cnt/Data.text
+
+func set_nombre(el_nombre: String) -> void:
+	$Fnd/Cnt/Data.text = el_nombre
 "
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]

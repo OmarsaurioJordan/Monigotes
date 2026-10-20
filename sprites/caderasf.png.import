@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg6p71cw14e3r"
-path="res://.godot/imported/d_monigotin_scroll.png-cb0d5b8e98dc09026371202725fd8535.ctex"
+uid="uid://6o4gk0lep81v"
+path="res://.godot/imported/caderasf.png-804fae98e3e468e06a2224d4de48bf92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/d_monigotin_scroll.png"
-dest_files=["res://.godot/imported/d_monigotin_scroll.png-cb0d5b8e98dc09026371202725fd8535.ctex"]
+source_file="res://sprites/caderasf.png"
+dest_files=["res://.godot/imported/caderasf.png-804fae98e3e468e06a2224d4de48bf92.ctex"]
 
 [params]
 

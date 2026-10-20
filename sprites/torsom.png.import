@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sxecbmxylurv"
-path="res://.godot/imported/d_monigotin2.png-251165bad4657ed369c147adb7602888.ctex"
+uid="uid://c6hmaqk1aq0na"
+path="res://.godot/imported/torsom.png-e6172c660cf10c349042a6eefb27cbfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/d_monigotin2.png"
-dest_files=["res://.godot/imported/d_monigotin2.png-251165bad4657ed369c147adb7602888.ctex"]
+source_file="res://sprites/torsom.png"
+dest_files=["res://.godot/imported/torsom.png-e6172c660cf10c349042a6eefb27cbfd.ctex"]
 
 [params]
 

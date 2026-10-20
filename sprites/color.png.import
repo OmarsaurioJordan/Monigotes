@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7hqa730lcchw"
-path="res://.godot/imported/d_monigotin1.png-7a17a4df82fcf18b1b557d532221c138.ctex"
+uid="uid://y8xebo5dhuig"
+path="res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/d_monigotin1.png"
-dest_files=["res://.godot/imported/d_monigotin1.png-7a17a4df82fcf18b1b557d532221c138.ctex"]
+source_file="res://sprites/color.png"
+dest_files=["res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"]
 
 [params]
 
