@@ -1,3 +1,15 @@
 # Godot 4+ specific ignores
 .godot/
+.qodo/
 /android/
+*.import
+*.uid
+*.gd.uid
+*.*.import
+*.zip
+*.rar
+*.exe
+build_web/*
+!build_web/.gitkeep
+*.translation
+*.*.translation
