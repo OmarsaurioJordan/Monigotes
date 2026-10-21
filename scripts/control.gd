@@ -1,6 +1,7 @@
 extends Control
 
 const ADMIN := preload("res://scenes/admin.tscn")
+const MANUAL := preload("res://scenes/manual.tscn")
 
 var id_master: int = 0
 
@@ -36,4 +37,5 @@ func _on_btn_admin_pressed() -> void:
 	add_child(admin)
 
 func _on_btn_habili_pressed() -> void:
-	pass
+	var manual := MANUAL.instantiate()
+	add_child(manual)

@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://dq4pl4ehu4wc3"]
+
+[ext_resource type="Script" uid="uid://cml4tvmynrsaj" path="res://scripts/manual.gd" id="1_e3q0r"]
+[ext_resource type="PackedScene" uid="uid://7vc2llls2jcy" path="res://scenes/habilidades.tscn" id="2_pxtqk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3q0r"]
+bg_color = Color(0.38343254, 0.25899443, 0.3322001, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
+bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+border_width_left = 50
+border_width_top = 10
+border_width_right = 50
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tryrp"]
+bg_color = Color(0.89411765, 0.89411765, 0.89411765, 0.4392157)
+border_width_left = 20
+border_width_top = 10
+border_width_right = 20
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="GDScript" id="GDScript_3btkx"]
+script/source = "extends ScrollContainer
+
+func _ready() -> void:
+	var barra := get_v_scroll_bar()
+	barra.custom_minimum_size.x = 24
+"
+
+[node name="Manual" type="Panel" unique_id=473155612]
+offset_left = 21.0
+offset_top = 35.0
+offset_right = 1045.0
+offset_bottom = 1870.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e3q0r")
+script = ExtResource("1_e3q0r")
+metadata/_edit_lock_ = true
+
+[node name="BtnSalir" type="Button" parent="." unique_id=1797890964]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 40.0
+offset_right = 136.0
+offset_bottom = 135.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "<--"
+metadata/_edit_lock_ = true
+
+[node name="BtnAzar" type="Button" parent="." unique_id=1781985975]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 39.0
+offset_right = 987.0
+offset_bottom = 134.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "Azar"
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="." unique_id=781795149]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 41.0
+offset_right = 826.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Habilidades"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Selector" type="PanelContainer" parent="." unique_id=590258266]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 172.0
+offset_right = 966.0
+offset_bottom = 272.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Cnt" type="HBoxContainer" parent="Selector" unique_id=1282184245]
+layout_mode = 2
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="BtnL" type="Button" parent="Selector/Cnt" unique_id=413782450]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "<--"
+metadata/_edit_lock_ = true
+
+[node name="Data" type="Label" parent="Selector/Cnt" unique_id=622783982]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")
+text = "DATA"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="BtnR" type="Button" parent="Selector/Cnt" unique_id=534151790]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "-->"
+metadata/_edit_lock_ = true
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=1396457438]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 320.0
+offset_right = 991.0
+offset_bottom = 1798.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+script = SubResource("GDScript_3btkx")
+metadata/_edit_lock_ = true
+
+[node name="Cont" type="VBoxContainer" parent="Scroll" unique_id=1721669047]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_lock_ = true
+
+[node name="Habilidades" parent="." unique_id=292843833 instance=ExtResource("2_pxtqk")]
+visible = false
+layout_mode = 0
+
+[connection signal="pressed" from="BtnSalir" to="." method="_on_btn_salir_pressed"]
+[connection signal="pressed" from="BtnAzar" to="." method="_on_btn_azar_pressed"]
+[connection signal="pressed" from="Selector/Cnt/BtnL" to="." method="_on_btn_l_pressed"]
+[connection signal="pressed" from="Selector/Cnt/BtnR" to="." method="_on_btn_r_pressed"]

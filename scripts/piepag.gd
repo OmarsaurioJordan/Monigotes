@@ -7,10 +7,10 @@ var pulsado: bool = false
 var ficha: Node = null
 
 func _ready() -> void:
-	ficha = get_tree().get_nodes_in_group("ficha")[0]
+	ficha = get_parent().get_parent().get_parent()
 
 func _process(delta: float) -> void:
-	ficha.modulate = Color.WHITE.lerp(Color.BLACK, (reloj / LIMITE) * 0.5)
+	ficha.modulate = Color.WHITE.lerp(Color.BLACK, (reloj / LIMITE) * 0.75)
 	if pulsado:
 		reloj += delta
 		if reloj >= LIMITE:

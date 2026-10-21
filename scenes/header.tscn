@@ -179,7 +179,7 @@ vertical_alignment = 1
 clip_text = true
 metadata/_edit_lock_ = true
 
-[node name="Bloqueo" type="Label" parent="Fnd2/Cnt/Cnt/A" unique_id=1911361077]
+[node name="Intelige" type="Label" parent="Fnd2/Cnt/Cnt/A" unique_id=1911361077]
 custom_minimum_size = Vector2(300, 60)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_tryrp")

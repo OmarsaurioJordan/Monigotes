@@ -7,9 +7,6 @@ const PIEPAG := preload("res://scenes/piepag.tscn")
 const HEADER := preload("res://scenes/header.tscn")
 const HABILIS := preload("res://scenes/habilidades.tscn")
 
-func get_monigote() -> Node:
-	return $Fondo/Monigote
-
 func init_ficha(ind: int) -> void:
 	$BtnAzar.visible = false
 	if not $Fondo/Monigote.abrir(ind):
@@ -22,15 +19,19 @@ func init_ficha(ind: int) -> void:
 	var items = $Fondo/Monigote.get_items()
 	var habilis := HABILIS.instantiate()
 	add_child(habilis)
-	var nodo: Node = habilis.get_elemento(items["elemento"])
-	$Scroll/Cont.add_child(habilis.new_separador())
-	$Scroll/Cont.add_child(nodo)
-	nodo = habilis.get_clase(items["clase"])
-	$Scroll/Cont.add_child(habilis.new_separador())
-	$Scroll/Cont.add_child(nodo)
-	nodo = habilis.get_rol(items["rol"])
-	$Scroll/Cont.add_child(habilis.new_separador())
-	$Scroll/Cont.add_child(nodo)
+	var nodo: Node = habilis.get_elemento(items["elemento"], true)
+	if nodo != null:
+		$Scroll/Cont.add_child(habilis.new_separador())
+		$Scroll/Cont.add_child(nodo)
+	nodo = habilis.get_clase(items["clase"], true)
+	if nodo != null:
+		$Scroll/Cont.add_child(habilis.new_separador())
+		$Scroll/Cont.add_child(nodo)
+	nodo = habilis.get_rol(items["rol"], true)
+	if nodo != null:
+		$Scroll/Cont.add_child(habilis.new_separador())
+		$Scroll/Cont.add_child(nodo)
+	# habilidades extra
 	habilis.queue_free()
 	# poner pie de pagina
 	var piepag := PIEPAG.instantiate()
@@ -48,6 +49,9 @@ func init_editor() -> void:
 	$Scroll/Cont.add_child(btnOk)
 	btnOk.get_boton().pressed.connect(crear_monigote)
 
+func get_monigote() -> Node:
+	return $Fondo/Monigote
+
 func crear_monigote() -> void:
 	var nomencla: Node = $Scroll/Cont.get_children()[0]
 	var nombre: String = $Fondo/Monigote.nombre_ok(nomencla.get_nombre())
@@ -58,6 +62,7 @@ func crear_monigote() -> void:
 		$Fondo/Monigote.crear_nuevo()
 		for admin in get_tree().get_nodes_in_group("admin"):
 			admin.carga_todo()
+			admin.ver_ficha($Fondo/Monigote.get_id())
 		queue_free()
 
 func _on_btn_salir_pressed() -> void:

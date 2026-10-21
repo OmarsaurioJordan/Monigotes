@@ -52,10 +52,10 @@ func init(nombre_item: String, monigote_origen: Node) -> void:
 			$Fnd/Cnt/Titulo.text = "Color del Pelo"
 			limite = Master.COLOR.size()
 		"rol":
-			$Fnd/Cnt/Titulo.text = "Herramienta Secundaria"
+			$Fnd/Cnt/Titulo.text = "Herramienta"
 			limite = Master.ROL.size()
 		"clase":
-			$Fnd/Cnt/Titulo.text = "Herramienta Principal"
+			$Fnd/Cnt/Titulo.text = "Clase o Rol"
 			limite = Master.CLASE.size()
 		"color_fondo":
 			$Fnd/Cnt/Titulo.text = "Color del Fondo"
@@ -87,46 +87,45 @@ func cambio(suma := 0) -> void:
 func put_data():
 	match item:
 		"genero":
-			$Fnd/Cnt/Cnt/Data.text = Master.GENERO.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_GENERO[ind]
 		"piel":
-			$Fnd/Cnt/Cnt/Data.text = Master.PIEL.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_PIEL[ind]
 		"orientacion":
-			$Fnd/Cnt/Cnt/Data.text = Master.ORIENTACION.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_ORIENTACION[ind]
 		"elemento":
-			$Fnd/Cnt/Cnt/Data.text = Master.ELEMENTO.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_ELEMENTO[ind]
 		"traje":
-			$Fnd/Cnt/Cnt/Data.text = Master.TRAJE.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_TRAJE[ind]
 		"torso":
 			if monigote.is_fem():
-				$Fnd/Cnt/Cnt/Data.text = Master.TORSO_F.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_TORSO_F[ind]
 			else:
-				$Fnd/Cnt/Cnt/Data.text = Master.TORSO_M.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_TORSO_M[ind]
 		"color_torso", "color_bajo", "color_pelo", "color_fondo":
-			$Fnd/Cnt/Cnt/Data.text = Master.COLOR.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_COLOR[ind]
 		"bajo":
 			if monigote.is_fem():
-				$Fnd/Cnt/Cnt/Data.text = Master.BAJO_F.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_BAJO_F[ind]
 			else:
-				$Fnd/Cnt/Cnt/Data.text = Master.BAJO_M.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_BAJO_M[ind]
 		"uniforme":
 			if monigote.is_grupo_a():
-				$Fnd/Cnt/Cnt/Data.text = Master.UNIFORME_A.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_UNIFORME_A[ind]
 			else:
-				$Fnd/Cnt/Cnt/Data.text = Master.UNIFORME_B.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_UNIFORME_B[ind]
 		"grupo":
-			$Fnd/Cnt/Cnt/Data.text = Master.GRUPO.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_GRUPO[ind]
 		"emocion":
-			$Fnd/Cnt/Cnt/Data.text = Master.EMOCION.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_EMOCION[ind]
 		"pelo":
 			if monigote.is_fem():
-				$Fnd/Cnt/Cnt/Data.text = Master.PELO_F.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_PELO_F[ind]
 			else:
-				$Fnd/Cnt/Cnt/Data.text = Master.PELO_M.keys()[ind]
+				$Fnd/Cnt/Cnt/Data.text = Master.NAME_PELO_M[ind]
 		"rol":
-			$Fnd/Cnt/Cnt/Data.text = Master.ROL.keys()[ind]
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_ROL[ind]
 		"clase":
-			$Fnd/Cnt/Cnt/Data.text = Master.CLASE.keys()[ind]
-	$Fnd/Cnt/Cnt/Data.text = $Fnd/Cnt/Cnt/Data.text.replace("_", " ")
+			$Fnd/Cnt/Cnt/Data.text = Master.NAME_CLASE[ind]
 	# ocultar tipo de traje
 	if item in ["torso", "color_torso", "bajo", "color_bajo"]:
 		visible = monigote.is_conjunto()

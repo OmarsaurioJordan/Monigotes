@@ -18,6 +18,37 @@ corner_radius_bottom_left = 20
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4uen"]
 bg_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gfo57"]
+load_path = "res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"
+
+[sub_resource type="Gradient" id="Gradient_2balv"]
+colors = PackedColorArray(0.12174346, 0.3587042, 0.9999996, 0.39215687, 0.4627451, 0.78431374, 0.8392157, 0.5882353)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w1jfk"]
+load_path = "res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"
+
+[sub_resource type="Gradient" id="Gradient_j4tpd"]
+offsets = PackedFloat32Array(0, 0.24074075, 0.67901236, 1)
+colors = PackedColorArray(0.11372549, 0.31764707, 0.23137255, 0.19607843, 0.11372549, 0.31764707, 0.23137255, 0.5882353, 0.11372549, 0.31764707, 0.23137255, 0.5882353, 0.11372549, 0.31764707, 0.23137255, 0.39215687)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bichl"]
+load_path = "res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"
+
+[sub_resource type="Gradient" id="Gradient_rpdh1"]
+offsets = PackedFloat32Array(0, 0.5185185, 1)
+colors = PackedColorArray(0.8086091, 0.80101913, 0.20020422, 0.39215687, 0.85490197, 0.84313726, 0.26666668, 0.5882353, 0.80784315, 0.8, 0.2, 0.39215687)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gy1v3"]
+load_path = "res://.godot/imported/color.png-85a5b0fd1e2ee2a10d06c9571fb4e9bb.ctex"
+
+[sub_resource type="Curve" id="Curve_f0j5h"]
+_data = [Vector2(0, 0.23595512), 0.0, 0.0, 0, 0, Vector2(0.49468088, 1), 0.0, 0.0, 0, 0, Vector2(0.7234043, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.22471917), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_q6neo"]
+offsets = PackedFloat32Array(0, 0.32098764, 0.7592593, 1)
+colors = PackedColorArray(0.84313726, 0, 0, 0.19607843, 0.7857554, 0.13282627, 0.13327777, 0.5882353, 0.8759055, 0.5353977, 0.19461313, 0.5882353, 0.827438, 0.5472209, 0.2535241, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gudf1"]
 bg_color = Color(0.5971761, 0.59717613, 0.597176, 1)
 
@@ -39,6 +70,7 @@ script = ExtResource("1_2balv")
 metadata/_edit_lock_ = true
 
 [node name="Fondo" type="Panel" parent="." unique_id=526639975 groups=["fondo"]]
+clip_children = 2
 layout_mode = 0
 offset_left = 34.0
 offset_top = 81.0
@@ -47,7 +79,79 @@ offset_bottom = 950.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_d4uen")
 metadata/_edit_lock_ = true
 
-[node name="Suelo" type="Panel" parent="Fondo" unique_id=1095269486 groups=["fondo"]]
+[node name="PartAgua" type="CPUParticles2D" parent="Fondo" unique_id=1521232531]
+visible = false
+position = Vector2(452, -25)
+amount = 150
+texture = SubResource("CompressedTexture2D_gfo57")
+lifetime = 8.0
+preprocess = 8.0
+emission_shape = 3
+emission_rect_extents = Vector2(500, 1)
+direction = Vector2(0, 0)
+spread = 0.0
+gravity = Vector2(0, 50)
+scale_amount_max = 1.5
+color_ramp = SubResource("Gradient_2balv")
+metadata/_edit_lock_ = true
+
+[node name="PartTierra" type="CPUParticles2D" parent="Fondo" unique_id=405260431]
+visible = false
+position = Vector2(458, 769)
+amount = 150
+texture = SubResource("CompressedTexture2D_w1jfk")
+lifetime = 8.0
+preprocess = 8.0
+emission_shape = 3
+emission_rect_extents = Vector2(500, 1)
+direction = Vector2(0, -1)
+spread = 20.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 200.0
+initial_velocity_max = 300.0
+damping_min = 30.0
+damping_max = 40.0
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_j4tpd")
+metadata/_edit_lock_ = true
+
+[node name="PartAire" type="CPUParticles2D" parent="Fondo" unique_id=593889327]
+visible = false
+position = Vector2(1000, 367)
+amount = 150
+texture = SubResource("CompressedTexture2D_bichl")
+lifetime = 8.0
+preprocess = 8.0
+emission_shape = 3
+emission_rect_extents = Vector2(0, 400)
+direction = Vector2(-1, 0)
+spread = 20.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 200.0
+initial_velocity_max = 250.0
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_rpdh1")
+metadata/_edit_lock_ = true
+
+[node name="PartFuego" type="CPUParticles2D" parent="Fondo" unique_id=1098643862]
+visible = false
+position = Vector2(457, 797)
+amount = 150
+texture = SubResource("CompressedTexture2D_gy1v3")
+lifetime = 8.0
+preprocess = 8.0
+emission_shape = 3
+emission_rect_extents = Vector2(500, 1)
+direction = Vector2(0, 0)
+spread = 0.0
+gravity = Vector2(0, -20)
+scale_amount_min = 1.5
+scale_amount_max = 2.0
+scale_amount_curve = SubResource("Curve_f0j5h")
+color_ramp = SubResource("Gradient_q6neo")
+metadata/_edit_lock_ = true
+
+[node name="Suelo" type="Panel" parent="Fondo" unique_id=1095269486]
 layout_mode = 0
 offset_top = 739.0
 offset_right = 957.0

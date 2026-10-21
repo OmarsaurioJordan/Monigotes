@@ -8,7 +8,7 @@ var nombre: String = ""
 var items: Dictionary = {
 	"genero": Master.GENERO.MUJER,
 	"orientacion": Master.ORIENTACION.HETEROSEX,
-	"elemento": Master.ELEMENTO.TIERRA,
+	"elemento": Master.ELEMENTO.NINGUNO,
 	"piel": Master.PIEL.MESTIZA,
 	"pelo": Master.PELO_F.MEDIANO,
 	"color_pelo": Master.COLOR.NEGRO,
@@ -56,8 +56,19 @@ func _process(delta: float) -> void:
 func get_items() -> Dictionary:
 	return items.duplicate(true)
 
+func get_estadisticas() -> Dictionary:
+	return {
+		"vida": 1,
+		"defensa": 1,
+		"inteligencia": 1,
+		"movimiento": 1,
+		"ataque": 1,
+		"distancia": 1
+	}
+
 func get_actualiza() -> Dictionary:
 	var ccc = [
+		Color.WHITE,
 		Color(0.724, 0.714, 0.321, 1.0),
 		Color(0.231, 0.384, 0.801, 1.0),
 		Color(0.247, 0.523, 0.259, 1.0),
@@ -77,6 +88,25 @@ func get_actualiza() -> Dictionary:
 		"rol_frame": $Visual/Rol.frame,
 		"fondo_color": Color.WHITE.lerp(ccc[items["elemento"]], 0.25)
 	}
+
+func get_header() -> Dictionary:
+	var grupo: String = "Sin Uniforme"
+	if not is_conjunto():
+		if is_grupo_a():
+			grupo = "A, " + Master.NAME_UNIFORME_A[items["uniforme"]]
+		else:
+			grupo = "B, " + Master.NAME_UNIFORME_B[items["uniforme"]]
+	return {
+		"genero": Master.NAME_GENERO[items["genero"]],
+		"orientacion": Master.NAME_ORIENTACION[items["orientacion"]],
+		"clase": Master.NAME_CLASE[items["clase"]],
+		"elemento": Master.NAME_ELEMENTO[items["elemento"]],
+		"emocion": Master.NAME_EMOCION[items["emocion"]],
+		"grupo": grupo
+	}
+
+func get_id() -> int:
+	return id
 
 func get_nombre() -> String:
 	return nombre
@@ -150,6 +180,15 @@ func actualizar() -> void:
 	for fondo in get_tree().get_nodes_in_group("fondo"):
 		ccc = Color.WHITE.lerp(Master.COLOR_RGB[items["color_fondo"]], 0.5)
 		fondo.self_modulate = ccc
+		fondo.get_node("Suelo").self_modulate = ccc
+		fondo.get_node("PartTierra").visible =\
+			items["elemento"] == Master.ELEMENTO.TIERRA
+		fondo.get_node("PartAgua").visible =\
+			items["elemento"] == Master.ELEMENTO.AGUA
+		fondo.get_node("PartAire").visible =\
+			items["elemento"] == Master.ELEMENTO.AIRE
+		fondo.get_node("PartFuego").visible =\
+			items["elemento"] == Master.ELEMENTO.FUEGO
 	#presencia de genital
 	$Visual/Cuerpo/Genital.visible = not is_fem() and (
 		($Visual/Cuerpo/BajoMas.visible and $Visual/Cuerpo/BajoMas.frame == 0) or

@@ -50,7 +50,6 @@ metadata/_edit_lock_ = true
 [node name="H1" type="PanelContainer" parent="HabRol" unique_id=590258266]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H1" unique_id=50361409]
 layout_mode = 2
@@ -87,7 +86,6 @@ metadata/_edit_lock_ = true
 [node name="H2" type="PanelContainer" parent="HabRol" unique_id=927657014]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H2" unique_id=53130415]
 layout_mode = 2
@@ -124,7 +122,6 @@ metadata/_edit_lock_ = true
 [node name="H3" type="PanelContainer" parent="HabRol" unique_id=1371348427]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H3" unique_id=890790736]
 layout_mode = 2
@@ -161,7 +158,6 @@ metadata/_edit_lock_ = true
 [node name="H4" type="PanelContainer" parent="HabRol" unique_id=353477060]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H4" unique_id=1128949747]
 layout_mode = 2
@@ -198,7 +194,6 @@ metadata/_edit_lock_ = true
 [node name="H5" type="PanelContainer" parent="HabRol" unique_id=223602875]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H5" unique_id=18933611]
 layout_mode = 2
@@ -235,7 +230,6 @@ metadata/_edit_lock_ = true
 [node name="H6" type="PanelContainer" parent="HabRol" unique_id=1633920900]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H6" unique_id=598046178]
 layout_mode = 2
@@ -272,7 +266,6 @@ metadata/_edit_lock_ = true
 [node name="H7" type="PanelContainer" parent="HabRol" unique_id=1977109724]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H7" unique_id=968211309]
 layout_mode = 2
@@ -309,7 +302,6 @@ metadata/_edit_lock_ = true
 [node name="H8" type="PanelContainer" parent="HabRol" unique_id=1828546200]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H8" unique_id=1531188283]
 layout_mode = 2
@@ -346,7 +338,6 @@ metadata/_edit_lock_ = true
 [node name="H9" type="PanelContainer" parent="HabRol" unique_id=787753043]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H9" unique_id=102438908]
 layout_mode = 2
@@ -383,7 +374,6 @@ metadata/_edit_lock_ = true
 [node name="H10" type="PanelContainer" parent="HabRol" unique_id=918068790]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H10" unique_id=1438562990]
 layout_mode = 2
@@ -420,7 +410,6 @@ metadata/_edit_lock_ = true
 [node name="H11" type="PanelContainer" parent="HabRol" unique_id=77104846]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H11" unique_id=1566527890]
 layout_mode = 2
@@ -457,7 +446,6 @@ metadata/_edit_lock_ = true
 [node name="H12" type="PanelContainer" parent="HabRol" unique_id=278431658]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H12" unique_id=1650422012]
 layout_mode = 2
@@ -494,7 +482,6 @@ metadata/_edit_lock_ = true
 [node name="H13" type="PanelContainer" parent="HabRol" unique_id=1180329410]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H13" unique_id=2121386343]
 layout_mode = 2
@@ -531,7 +518,6 @@ metadata/_edit_lock_ = true
 [node name="H14" type="PanelContainer" parent="HabRol" unique_id=214717031]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H14" unique_id=1173131290]
 layout_mode = 2
@@ -568,7 +554,6 @@ metadata/_edit_lock_ = true
 [node name="H15" type="PanelContainer" parent="HabRol" unique_id=866770535]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H15" unique_id=1056632798]
 layout_mode = 2
@@ -605,7 +590,6 @@ metadata/_edit_lock_ = true
 [node name="H16" type="PanelContainer" parent="HabRol" unique_id=91958976]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H16" unique_id=1654266413]
 layout_mode = 2
@@ -642,7 +626,6 @@ metadata/_edit_lock_ = true
 [node name="H17" type="PanelContainer" parent="HabRol" unique_id=1675976967]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H17" unique_id=1326685656]
 layout_mode = 2
@@ -679,7 +662,6 @@ metadata/_edit_lock_ = true
 [node name="H18" type="PanelContainer" parent="HabRol" unique_id=2143931472]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H18" unique_id=1430891374]
 layout_mode = 2
@@ -716,7 +698,6 @@ metadata/_edit_lock_ = true
 [node name="H19" type="PanelContainer" parent="HabRol" unique_id=1915262629]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H19" unique_id=1017491902]
 layout_mode = 2
@@ -753,7 +734,6 @@ metadata/_edit_lock_ = true
 [node name="H20" type="PanelContainer" parent="HabRol" unique_id=1966208726]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H20" unique_id=972139140]
 layout_mode = 2
@@ -790,7 +770,6 @@ metadata/_edit_lock_ = true
 [node name="H21" type="PanelContainer" parent="HabRol" unique_id=1131550794]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabRol/H21" unique_id=778045164]
 layout_mode = 2
@@ -835,7 +814,6 @@ metadata/_edit_lock_ = true
 [node name="H1" type="PanelContainer" parent="HabClase" unique_id=771801771]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H1" unique_id=1465008071]
 layout_mode = 2
@@ -871,7 +849,6 @@ metadata/_edit_lock_ = true
 [node name="H2" type="PanelContainer" parent="HabClase" unique_id=1971157750]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H2" unique_id=1791008169]
 layout_mode = 2
@@ -907,7 +884,6 @@ metadata/_edit_lock_ = true
 [node name="H3" type="PanelContainer" parent="HabClase" unique_id=97106318]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H3" unique_id=1522798789]
 layout_mode = 2
@@ -943,7 +919,6 @@ metadata/_edit_lock_ = true
 [node name="H4" type="PanelContainer" parent="HabClase" unique_id=1009147472]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H4" unique_id=946370233]
 layout_mode = 2
@@ -979,7 +954,6 @@ metadata/_edit_lock_ = true
 [node name="H5" type="PanelContainer" parent="HabClase" unique_id=1004960786]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H5" unique_id=834567445]
 layout_mode = 2
@@ -1015,7 +989,6 @@ metadata/_edit_lock_ = true
 [node name="H6" type="PanelContainer" parent="HabClase" unique_id=165808078]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H6" unique_id=473166934]
 layout_mode = 2
@@ -1051,7 +1024,6 @@ metadata/_edit_lock_ = true
 [node name="H7" type="PanelContainer" parent="HabClase" unique_id=153029838]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H7" unique_id=1243014613]
 layout_mode = 2
@@ -1087,7 +1059,6 @@ metadata/_edit_lock_ = true
 [node name="H8" type="PanelContainer" parent="HabClase" unique_id=873648846]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabClase/H8" unique_id=412838422]
 layout_mode = 2
@@ -1131,7 +1102,6 @@ metadata/_edit_lock_ = true
 [node name="H1" type="PanelContainer" parent="HabElemento" unique_id=141057765]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabElemento/H1" unique_id=869784703]
 layout_mode = 2
@@ -1160,12 +1130,12 @@ metadata/_edit_lock_ = true
 position = Vector2(32, 43)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_57ryq")
-hframes = 4
+hframes = 5
+frame = 1
 
 [node name="H2" type="PanelContainer" parent="HabElemento" unique_id=775792966]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabElemento/H2" unique_id=572115375]
 layout_mode = 2
@@ -1194,13 +1164,12 @@ metadata/_edit_lock_ = true
 position = Vector2(32, 43)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_57ryq")
-hframes = 4
-frame = 1
+hframes = 5
+frame = 2
 
 [node name="H3" type="PanelContainer" parent="HabElemento" unique_id=1805403155]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabElemento/H3" unique_id=364548686]
 layout_mode = 2
@@ -1229,13 +1198,12 @@ metadata/_edit_lock_ = true
 position = Vector2(32, 43)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_57ryq")
-hframes = 4
-frame = 2
+hframes = 5
+frame = 3
 
 [node name="H4" type="PanelContainer" parent="HabElemento" unique_id=985409591]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
-metadata/_edit_lock_ = true
 
 [node name="Cnt" type="VBoxContainer" parent="HabElemento/H4" unique_id=2068931726]
 layout_mode = 2
@@ -1264,5 +1232,47 @@ metadata/_edit_lock_ = true
 position = Vector2(32, 43)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_57ryq")
-hframes = 4
-frame = 3
+hframes = 5
+frame = 4
+
+[node name="HabExtra" type="VBoxContainer" parent="." unique_id=1309982270]
+layout_mode = 0
+offset_left = 4180.0
+offset_top = 54.0
+offset_right = 5139.0
+offset_bottom = 1887.0
+metadata/_edit_lock_ = true
+
+[node name="H1" type="PanelContainer" parent="HabExtra" unique_id=1240339528]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2uw1")
+
+[node name="Cnt" type="VBoxContainer" parent="HabExtra/H1" unique_id=812128023]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="HabExtra/H1/Cnt" unique_id=1120456954]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Título"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="HabExtra/H1/Cnt" unique_id=529404107]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_g1ui7")
+text = "texto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Img" type="Sprite2D" parent="HabExtra/H1/Cnt" unique_id=523213485]
+visible = false
+position = Vector2(32, 43)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_57ryq")
+hframes = 255
