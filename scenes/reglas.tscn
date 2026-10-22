@@ -1,0 +1,238 @@
+[gd_scene format=3 uid="uid://dc2n67htlr5n3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkoio"]
+bg_color = Color(0.5236611, 0.51898396, 0.4370126, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="GDScript" id="GDScript_m2uw1"]
+script/source = "extends Panel
+
+func _ready() -> void:
+	for dt in $Data.get_children():
+		$Scroll/Cont.add_child(dt.duplicate())
+	$Data.queue_free()
+
+func _on_btn_salir_pressed() -> void:
+	queue_free()
+"
+
+[sub_resource type="GDScript" id="GDScript_3btkx"]
+script/source = "extends ScrollContainer
+
+func _ready() -> void:
+	var barra := get_v_scroll_bar()
+	barra.custom_minimum_size.x = 24
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j27l4"]
+bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+border_width_left = 50
+border_width_top = 10
+border_width_right = 50
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qq8th"]
+bg_color = Color(0.89411765, 0.89411765, 0.89411765, 0.4392157)
+border_width_left = 20
+border_width_top = 10
+border_width_right = 20
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[node name="Reglas" type="Panel" unique_id=473155612]
+offset_left = 21.0
+offset_top = 35.0
+offset_right = 1045.0
+offset_bottom = 1870.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xkoio")
+script = SubResource("GDScript_m2uw1")
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="." unique_id=1972770952]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 24.0
+offset_right = 975.0
+offset_bottom = 168.0
+theme_override_font_sizes/font_size = 50
+text = "Reglas de Monigotes"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=1396457438]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 188.0
+offset_right = 991.0
+offset_bottom = 1798.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+script = SubResource("GDScript_3btkx")
+metadata/_edit_lock_ = true
+
+[node name="Cont" type="VBoxContainer" parent="Scroll" unique_id=1721669047]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_lock_ = true
+
+[node name="BtnSalir" type="Button" parent="." unique_id=1797890964]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 53.0
+offset_right = 139.0
+offset_bottom = 148.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+text = "<--"
+metadata/_edit_lock_ = true
+
+[node name="Data" type="VBoxContainer" parent="." unique_id=931036116]
+layout_mode = 0
+offset_left = 1144.0
+offset_top = 64.0
+offset_right = 2095.0
+offset_bottom = 1674.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_lock_ = true
+
+[node name="H1" type="PanelContainer" parent="Data" unique_id=1026146456]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H1" unique_id=1528715259]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H1/Cnt" unique_id=1383363069]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H1/Cnt" unique_id=1407916516]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H2" type="PanelContainer" parent="Data" unique_id=135029323]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H2" unique_id=195576593]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H2/Cnt" unique_id=825004482]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H2/Cnt" unique_id=211541455]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H3" type="PanelContainer" parent="Data" unique_id=221844679]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H3" unique_id=778280047]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H3/Cnt" unique_id=1687395760]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H3/Cnt" unique_id=1095204374]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H4" type="PanelContainer" parent="Data" unique_id=866515943]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H4" unique_id=361726542]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H4/Cnt" unique_id=939983253]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H4/Cnt" unique_id=1733575312]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H5" type="PanelContainer" parent="Data" unique_id=204283982]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H5" unique_id=1104874995]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H5/Cnt" unique_id=577720287]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H5/Cnt" unique_id=415016785]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="BtnSalir" to="." method="_on_btn_salir_pressed"]

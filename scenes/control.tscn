@@ -91,5 +91,21 @@ theme_override_font_sizes/font_size = 50
 text = "HABILIDADES"
 metadata/_edit_lock_ = true
 
+[node name="Spr3" type="Label" parent="Menu" unique_id=1381355526]
+custom_minimum_size = Vector2(0, 60)
+custom_maximum_size = Vector2(-1, 60)
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="BtnReglas" type="Button" parent="Menu" unique_id=79025511]
+custom_minimum_size = Vector2(700, 80)
+layout_mode = 2
+focus_mode = 0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 50
+text = "REGLAS"
+metadata/_edit_lock_ = true
+
 [connection signal="pressed" from="Menu/BtnAdmin" to="." method="_on_btn_admin_pressed"]
 [connection signal="pressed" from="Menu/BtnHabili" to="." method="_on_btn_habili_pressed"]
+[connection signal="pressed" from="Menu/BtnReglas" to="." method="_on_btn_reglas_pressed"]
