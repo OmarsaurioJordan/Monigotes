@@ -32,6 +32,10 @@ func init_ficha(ind: int) -> void:
 		$Scroll/Cont.add_child(habilis.new_separador())
 		$Scroll/Cont.add_child(nodo)
 	# habilidades extra
+	if not $Fondo/Monigote.is_conjunto():
+		nodo = habilis.get_extra(Master.HAB_EXTRA.GRUPO, true)
+		$Scroll/Cont.add_child(habilis.new_separador())
+		$Scroll/Cont.add_child(nodo)
 	habilis.queue_free()
 	# poner pie de pagina
 	var piepag := PIEPAG.instantiate()

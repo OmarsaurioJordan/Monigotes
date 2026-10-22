@@ -509,5 +509,5 @@ const NAME_CLASE := [
 ]
 
 enum HAB_EXTRA {
-	
+	GRUPO
 }

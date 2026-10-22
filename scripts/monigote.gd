@@ -57,14 +57,16 @@ func get_items() -> Dictionary:
 	return items.duplicate(true)
 
 func get_estadisticas() -> Dictionary:
-	return {
-		"vida": 1,
-		"defensa": 1,
+	var stats: Dictionary = {
+		"vida": 12,
+		"defensa": 2,
 		"inteligencia": 1,
-		"movimiento": 1,
+		"movimiento": 3,
 		"ataque": 1,
 		"distancia": 1
 	}
+	
+	return stats
 
 func get_actualiza() -> Dictionary:
 	var ccc = [
