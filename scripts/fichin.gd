@@ -1,6 +1,9 @@
 extends VBoxContainer
 
+var id: int = 0 # del monigote
+
 func set_data(monigote: Node) -> void:
+	id = monigote.get_id()
 	$Fnd/Cnt/Nombre.text = monigote.get_nombre()
 	var data: Dictionary = monigote.get_actualiza()
 	$Fnd/Cnt/Fondo/Cabeza.texture = data["cabeza_texture"]
@@ -18,3 +21,6 @@ func set_data(monigote: Node) -> void:
 
 func get_boton() -> Node:
 	return $Fnd/Cnt/BtnVer
+
+func get_id() -> int:
+	return id

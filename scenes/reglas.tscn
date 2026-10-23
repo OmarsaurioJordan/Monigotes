@@ -121,6 +121,7 @@ metadata/_edit_lock_ = true
 [node name="Titulo" type="Label" parent="Data/H1/Cnt" unique_id=1383363069]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+text = "Tiros de Suerte"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
@@ -130,31 +131,7 @@ metadata/_edit_lock_ = true
 custom_minimum_size = Vector2(500, 80)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-metadata/_edit_lock_ = true
-
-[node name="H2" type="PanelContainer" parent="Data" unique_id=135029323]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
-
-[node name="Cnt" type="VBoxContainer" parent="Data/H2" unique_id=195576593]
-layout_mode = 2
-metadata/_edit_lock_ = true
-
-[node name="Titulo" type="Label" parent="Data/H2/Cnt" unique_id=825004482]
-custom_minimum_size = Vector2(0, 80)
-layout_mode = 2
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-metadata/_edit_lock_ = true
-
-[node name="Texto" type="Label" parent="Data/H2/Cnt" unique_id=211541455]
-custom_minimum_size = Vector2(500, 80)
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Por sencillez, todo funciona con un dado de 6 caras (d6), cuando se pida una tirada 3+ por ejemplo, significa que si saca 3,4,5,6 es acertada"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -171,6 +148,7 @@ metadata/_edit_lock_ = true
 [node name="Titulo" type="Label" parent="Data/H3/Cnt" unique_id=1687395760]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+text = "Turnos en Dos Actos"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
@@ -180,31 +158,34 @@ metadata/_edit_lock_ = true
 custom_minimum_size = Vector2(500, 80)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "En un turno, se efectúa el movimiento y luego se realiza una acción, puede ser ataque o habilidad especial, a excepción de que la habilidad modifique esta regla. Cuando una tirada de habilidad sale mal (No pasa algo), igual consume la acción"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_lock_ = true
 
-[node name="H4" type="PanelContainer" parent="Data" unique_id=866515943]
+[node name="H2" type="PanelContainer" parent="Data" unique_id=135029323]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
 
-[node name="Cnt" type="VBoxContainer" parent="Data/H4" unique_id=361726542]
+[node name="Cnt" type="VBoxContainer" parent="Data/H2" unique_id=195576593]
 layout_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="Titulo" type="Label" parent="Data/H4/Cnt" unique_id=939983253]
+[node name="Titulo" type="Label" parent="Data/H2/Cnt" unique_id=825004482]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+text = "Movimiento y Alcance"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
 metadata/_edit_lock_ = true
 
-[node name="Texto" type="Label" parent="Data/H4/Cnt" unique_id=1733575312]
+[node name="Texto" type="Label" parent="Data/H2/Cnt" unique_id=211541455]
 custom_minimum_size = Vector2(500, 80)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Cuando se habla de pasos, metros, distancia o limitaciónes espaciales, refiere a conteo de celdas de cuadrícula en cruz (No diagonales), excepto para efecto de melé (1 paso) que si toma las diagonales"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -221,6 +202,7 @@ metadata/_edit_lock_ = true
 [node name="Titulo" type="Label" parent="Data/H5/Cnt" unique_id=577720287]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
+text = "Efectuar Ataques"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
@@ -230,6 +212,7 @@ metadata/_edit_lock_ = true
 custom_minimum_size = Vector2(500, 80)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Lanza un tiro de ataque, si el dado es mayor a la defensa entonces acierta el golpe, reduciendo a la vida del oponente los puntos de ataque del arma usada, ejemplo, si defensa 3, debe sacar 4,5,6"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

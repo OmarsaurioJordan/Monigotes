@@ -64,6 +64,8 @@ func crear_monigote() -> void:
 	else:
 		$Fondo/Monigote.set_nombre(nombre)
 		$Fondo/Monigote.crear_nuevo()
+		var ctrl: Node = get_tree().get_nodes_in_group("control")[0]
+		ctrl.set_orden($Fondo/Monigote.get_id())
 		for admin in get_tree().get_nodes_in_group("admin"):
 			admin.carga_todo()
 			admin.ver_ficha($Fondo/Monigote.get_id())
