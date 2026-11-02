@@ -60,6 +60,16 @@ func init(nombre_item: String, monigote_origen: Node) -> void:
 		"color_fondo":
 			$Fnd/Cnt/Titulo.text = "Color del Fondo"
 			limite = Master.COLOR.size()
+	match item:
+		"genero", "orientacion", "elemento":
+			$Fnd.self_modulate = Color("8b7558")
+		"emocion", "pelo", "color_pelo", "piel":
+			$Fnd.self_modulate = Color("677a96")
+		"torso", "color_torso", "bajo", "color_bajo",\
+		"uniforme", "grupo", "traje":
+			$Fnd.self_modulate = Color("9d686f")
+		"rol", "clase", "color_fondo":
+			$Fnd.self_modulate = Color("628173")
 	ind = monigote.get_item_data(item)
 	cambio()
 

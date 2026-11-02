@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cskxoat510be8" path="res://scripts/elect.gd" id="1_t7oc7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2uw1"]
-bg_color = Color(0.4219889, 0.38819343, 0.28766116, 0.41568628)
+bg_color = Color(0.8399295, 0.8399679, 0.82852477, 0.41568628)
 border_width_left = 50
 border_width_top = 10
 border_width_right = 50

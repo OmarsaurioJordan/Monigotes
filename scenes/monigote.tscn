@@ -31,7 +31,8 @@ metadata/_edit_lock_ = true
 [node name="Cuerpo" type="Sprite2D" parent="Visual" unique_id=1158085870]
 texture = ExtResource("2_5uppf")
 offset = Vector2(0, -90)
-hframes = 13
+hframes = 8
+vframes = 2
 frame = 1
 metadata/_edit_lock_ = true
 
@@ -39,79 +40,92 @@ metadata/_edit_lock_ = true
 visible = false
 texture = ExtResource("2_5uppf")
 offset = Vector2(0, -90)
-hframes = 13
+hframes = 8
+vframes = 2
 frame = 12
 metadata/_edit_lock_ = true
 
 [node name="BajoFem" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1535648964]
 texture = ExtResource("3_m4ibw")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="BajoMas" type="Sprite2D" parent="Visual/Cuerpo" unique_id=82641902]
 texture = ExtResource("4_0y73q")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="TorsoFem" type="Sprite2D" parent="Visual/Cuerpo" unique_id=2088667831]
 texture = ExtResource("5_pr13g")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="TorsoMas" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1589714403]
 texture = ExtResource("6_2q4ud")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="VestUno" type="Sprite2D" parent="Visual/Cuerpo" unique_id=2126492840]
 texture = ExtResource("7_jrm07")
 offset = Vector2(0, -90)
-hframes = 26
+hframes = 8
+vframes = 4
 metadata/_edit_lock_ = true
 
 [node name="VestDos" type="Sprite2D" parent="Visual/Cuerpo" unique_id=1612105784]
 texture = ExtResource("8_q0jqw")
 offset = Vector2(0, -90)
-hframes = 26
+hframes = 8
+vframes = 4
 metadata/_edit_lock_ = true
 
 [node name="Cabeza" type="Sprite2D" parent="Visual" unique_id=1269604141]
 texture = ExtResource("2_5uppf")
 offset = Vector2(0, -90)
-hframes = 13
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="Emocion" type="Sprite2D" parent="Visual/Cabeza" unique_id=1317851759]
 texture = ExtResource("9_fyvpd")
 offset = Vector2(0, -90)
-hframes = 33
+hframes = 8
+vframes = 5
 metadata/_edit_lock_ = true
 
 [node name="PeloFem" type="Sprite2D" parent="Visual/Cabeza" unique_id=153142081]
 texture = ExtResource("10_rl8v1")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="PeloMas" type="Sprite2D" parent="Visual/Cabeza" unique_id=202008923]
 texture = ExtResource("11_fckuw")
 offset = Vector2(0, -90)
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="Rol" type="Sprite2D" parent="Visual" unique_id=1565069385]
 texture = ExtResource("13_7xo5g")
 offset = Vector2(-2, -90)
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 metadata/_edit_lock_ = true
 
 [node name="Clase" type="Sprite2D" parent="Visual" unique_id=966723750]
 texture = ExtResource("12_cjt2x")
 offset = Vector2(0, -90)
-hframes = 9
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true

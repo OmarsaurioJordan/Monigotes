@@ -53,30 +53,35 @@ metadata/_edit_lock_ = true
 position = Vector2(82, 84)
 scale = Vector2(2, 2)
 texture = ExtResource("1_kg4bl")
-hframes = 13
+hframes = 8
+vframes = 2
 frame = 6
 metadata/_edit_lock_ = true
 
 [node name="Emocion" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=1713657860]
 texture = ExtResource("2_sptvr")
-hframes = 33
+hframes = 8
+vframes = 5
 metadata/_edit_lock_ = true
 
 [node name="PeloFem" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=727311669]
 texture = ExtResource("3_fpeej")
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="PeloMas" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=2012572241]
 texture = ExtResource("4_ok7li")
-hframes = 16
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="Clase" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=470666030]
 position = Vector2(16, -16)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("5_sptvr")
-hframes = 9
+hframes = 8
+vframes = 2
 metadata/_edit_lock_ = true
 
 [node name="Rol" type="Sprite2D" parent="Fnd/Cnt/Fondo/Cabeza" unique_id=84033922]
@@ -84,7 +89,8 @@ position = Vector2(-20, -8)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("7_ok7li")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 metadata/_edit_lock_ = true
 
 [node name="Nombre" type="Label" parent="Fnd/Cnt" unique_id=882235562]

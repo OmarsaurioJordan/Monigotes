@@ -79,7 +79,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 1
 metadata/_edit_lock_ = true
 
@@ -115,7 +116,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 2
 metadata/_edit_lock_ = true
 
@@ -151,7 +153,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 3
 metadata/_edit_lock_ = true
 
@@ -187,7 +190,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 4
 metadata/_edit_lock_ = true
 
@@ -223,7 +227,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 5
 metadata/_edit_lock_ = true
 
@@ -259,7 +264,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 6
 metadata/_edit_lock_ = true
 
@@ -295,7 +301,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 7
 metadata/_edit_lock_ = true
 
@@ -331,7 +338,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 8
 metadata/_edit_lock_ = true
 
@@ -367,7 +375,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 9
 metadata/_edit_lock_ = true
 
@@ -403,7 +412,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 10
 metadata/_edit_lock_ = true
 
@@ -439,7 +449,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 11
 metadata/_edit_lock_ = true
 
@@ -475,7 +486,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 12
 metadata/_edit_lock_ = true
 
@@ -511,7 +523,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 13
 metadata/_edit_lock_ = true
 
@@ -547,7 +560,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 14
 metadata/_edit_lock_ = true
 
@@ -583,7 +597,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 15
 metadata/_edit_lock_ = true
 
@@ -619,7 +634,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 16
 metadata/_edit_lock_ = true
 
@@ -655,7 +671,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 17
 metadata/_edit_lock_ = true
 
@@ -691,7 +708,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 18
 metadata/_edit_lock_ = true
 
@@ -727,7 +745,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 19
 metadata/_edit_lock_ = true
 
@@ -763,7 +782,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 20
 metadata/_edit_lock_ = true
 
@@ -799,7 +819,8 @@ position = Vector2(68, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_mrihd")
 flip_h = true
-hframes = 22
+hframes = 8
+vframes = 3
 frame = 21
 metadata/_edit_lock_ = true
 
@@ -842,7 +863,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 1
 metadata/_edit_lock_ = true
 
@@ -877,7 +899,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 2
 metadata/_edit_lock_ = true
 
@@ -912,7 +935,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 3
 metadata/_edit_lock_ = true
 
@@ -947,7 +971,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 4
 metadata/_edit_lock_ = true
 
@@ -982,7 +1007,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 5
 metadata/_edit_lock_ = true
 
@@ -1017,7 +1043,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 6
 metadata/_edit_lock_ = true
 
@@ -1052,7 +1079,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 7
 metadata/_edit_lock_ = true
 
@@ -1087,7 +1115,8 @@ metadata/_edit_lock_ = true
 position = Vector2(27, -22)
 scale = Vector2(2, 2)
 texture = ExtResource("2_57ryq")
-hframes = 9
+hframes = 8
+vframes = 2
 frame = 8
 metadata/_edit_lock_ = true
 
