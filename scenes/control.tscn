@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b2v68jckhdfwr" path="res://scripts/control.gd" id="1_r67kn"]
 [ext_resource type="Texture2D" uid="uid://dnwg8ds4qqilr" path="res://sprites/suelo.png" id="2_r67kn"]
+[ext_resource type="PackedScene" uid="uid://4gua6sm8ud82" path="res://scenes/dado.tscn" id="3_brbbq"]
 
 [node name="Control" type="Control" unique_id=1572215301 groups=["control"]]
 layout_mode = 3
@@ -105,6 +106,10 @@ mouse_default_cursor_shape = 2
 theme_override_font_sizes/font_size = 50
 text = "REGLAS"
 metadata/_edit_lock_ = true
+
+[node name="Dado" parent="." unique_id=927410715 instance=ExtResource("3_brbbq")]
+position = Vector2(139, 1771)
+scale = Vector2(2, 2)
 
 [connection signal="pressed" from="Menu/BtnAdmin" to="." method="_on_btn_admin_pressed"]
 [connection signal="pressed" from="Menu/BtnHabili" to="." method="_on_btn_habili_pressed"]

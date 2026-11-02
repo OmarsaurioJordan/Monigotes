@@ -59,13 +59,58 @@ func get_items() -> Dictionary:
 func get_estadisticas() -> Dictionary:
 	var stats: Dictionary = {
 		"vida": 12,
-		"defensa": 2,
+		"defensa": 0,
 		"inteligencia": 1,
 		"movimiento": 3,
 		"ataque": 1,
 		"distancia": 1
 	}
-	
+	stats["vida"] -= 1 if is_fem() else 0
+	stats["inteligencia"] += 1 if is_fem() else 0
+	# clase
+	match items["clase"]:
+		Master.CLASE.NADA:
+			stats["movimiento"] += 1
+		Master.CLASE.ESPADA:
+			stats["ataque"] = 2
+		Master.CLASE.HACHA:
+			stats["ataque"] = 3
+		Master.CLASE.PALO:
+			stats["ataque"] = 2
+		Master.CLASE.BALLESTA:
+			stats["distancia"] = 7
+			stats["ataque"] = 2
+		Master.CLASE.MAZO:
+			stats["ataque"] = 3
+		Master.CLASE.TAMBOR:
+			stats["distancia"] = 9
+			stats["ataque"] = 1
+		Master.CLASE.BACULO:
+			stats["distancia"] = 8
+			stats["inteligencia"] += 1
+			stats["ataque"] = 1
+		Master.CLASE.MEDICINA:
+			stats["inteligencia"] += 1
+	# rol
+	match items["rol"]:
+		Master.ROL.NINGUNA:
+			stats["movimiento"] += 1
+		Master.ROL.LIBRO, Master.ROL.BASTON, Master.ROL.BOTIQUIN,\
+				Master.ROL.CUADERNO, Master.ROL.COMPUTADORA:
+			stats["inteligencia"] += 1
+	# vestimenta
+	if is_conjunto():
+		if is_fem():
+			stats["defensa"] += Master.ARMOR_TORSO_F[items["torso"]]
+			stats["defensa"] += Master.ARMOR_BAJO_F[items["bajo"]]
+		else:
+			stats["defensa"] += Master.ARMOR_TORSO_M[items["torso"]]
+			stats["defensa"] += Master.ARMOR_BAJO_M[items["bajo"]]
+	else:
+		if is_grupo_a():
+			stats["defensa"] += Master.ARMOR_UNIFORME_A[items["uniforme"]]
+		else:
+			stats["defensa"] += Master.ARMOR_UNIFORME_B[items["uniforme"]]
 	return stats
 
 func get_actualiza() -> Dictionary:

@@ -212,7 +212,169 @@ metadata/_edit_lock_ = true
 custom_minimum_size = Vector2(500, 80)
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
-text = "Lanza un tiro de ataque, si el dado es mayor a la defensa entonces acierta el golpe, reduciendo a la vida del oponente los puntos de ataque del arma usada, ejemplo, si defensa 3, debe sacar 4,5,6"
+text = "Lanza un tiro de ataque, si el dado es mayor a la defensa entonces acierta el golpe, reduciendo a la vida del oponente los puntos de ataque del arma usada, ejemplo, si defensa 3, debe sacar 4+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H10" type="PanelContainer" parent="Data" unique_id=1325043178]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H10" unique_id=1861265933]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H10/Cnt" unique_id=1031496515]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Tiros de Distancia"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H10/Cnt" unique_id=903437416]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Para acertar daños físicos, si el enemigo está a 4+ de distancia, primero debe tirar 3+, si está a 7+ debe tirar 4+, luego hace cálculos igual que melé (las defensas)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H8" type="PanelContainer" parent="Data" unique_id=1593253662]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H8" unique_id=454940078]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H8/Cnt" unique_id=191637187]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Hacke a Tiradores"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H8/Cnt" unique_id=1137005879]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Los ataques de distancia físicos o mágicos, requieren que el objetivo atacado esté fuera del rango melé o en su defecto, esté ocupado encarando a otro enemigo"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H6" type="PanelContainer" parent="Data" unique_id=180013459]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H6" unique_id=965014095]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H6/Cnt" unique_id=1012920341]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Ataques Mágicos"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H6/Cnt" unique_id=707940266]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "A diferencia de los físicos, estos no tienen en cuenta la armadura, cobertura o escudo, el daño depende del arma o habilidad, y cada cuál especificará su tirada de acierto"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H7" type="PanelContainer" parent="Data" unique_id=1584134249]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H7" unique_id=1744371787]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H7/Cnt" unique_id=1295763685]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Cobertura Simple"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H7/Cnt" unique_id=735316292]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Ante ataques de distancia físicos, solo existen 3 posibilidades, sin cobertura, cobertura total, o media, donde debe tirar 4+ para pasar cada obstáculo medio, muros bajos, otros humanos o criaturas lo son"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H11" type="PanelContainer" parent="Data" unique_id=97310048]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H11" unique_id=138449064]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H11/Cnt" unique_id=664120413]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Retención Oportunista"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H11/Cnt" unique_id=571343955]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Si un oponente pretende pasar por el lado, puede ser retenido si se saca un tiro 4+, esto frenará su movimiento a distancia melé, pero no puede estar entretenido con otro conflicto de melé quién lo retiene"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="H9" type="PanelContainer" parent="Data" unique_id=2004894667]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j27l4")
+
+[node name="Cnt" type="VBoxContainer" parent="Data/H9" unique_id=1323411592]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Titulo" type="Label" parent="Data/H9/Cnt" unique_id=361533935]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "Inteligencia Perspicaz"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_lock_ = true
+
+[node name="Texto" type="Label" parent="Data/H9/Cnt" unique_id=1376843752]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qq8th")
+text = "Cuando haya acertijos, sospechas o pruebas mentales, se hace la tirada de inteligencia, si saca Inte- acierta, ejemplo: Inte 3, debe sacar 1,2,3"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

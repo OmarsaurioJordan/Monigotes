@@ -114,6 +114,24 @@ const NAME_TORSO_M := [
 	"Armadura",
 	"Corbatín"
 ]
+const ARMOR_TORSO_M := [ # 0, 1, 2
+	0,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	2,
+	2,
+	2,
+	2,
+	2,
+	1,
+	2,
+	2,
+	0
+]
 
 enum TORSO_F {
 	NADA,
@@ -150,6 +168,24 @@ const NAME_TORSO_F := [
 	"Abrigo",
 	"Brasier",
 	"Escotada"
+]
+const ARMOR_TORSO_F := [ # 0,1,2
+	0,
+	0,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	2,
+	2,
+	2,
+	1,
+	2,
+	1,
+	1
 ]
 
 enum BAJO_M {
@@ -188,6 +224,24 @@ const NAME_BAJO_M := [
 	"Tribal",
 	"Vegetal"
 ]
+const ARMOR_BAJO_M := [
+	0,
+	1,
+	1,
+	2,
+	2,
+	1,
+	1,
+	2,
+	2,
+	1,
+	2,
+	1,
+	1,
+	1,
+	2,
+	1
+]
 
 enum BAJO_F {
 	NADA,
@@ -225,6 +279,24 @@ const NAME_BAJO_F := [
 	"Cuco",
 	"Sombrilla"
 ]
+const ARMOR_BAJO_F := [ # 0,1,2
+	0,
+	1,
+	2,
+	2,
+	2,
+	1,
+	1,
+	2,
+	2,
+	1,
+	2,
+	1,
+	2,
+	1,
+	1,
+	2
+]
 
 enum UNIFORME_A {
 	FEMENINO,
@@ -256,6 +328,21 @@ const NAME_UNIFORME_A := [
 	"Antiguo",
 	"Azul"
 ]
+const ARMOR_UNIFORME_A := [ # 0,1,2,3,4
+	2,
+	3,
+	2,
+	4,
+	2,
+	3,
+	2,
+	1,
+	2,
+	2,
+	1,
+	1,
+	2
+]
 
 enum UNIFORME_B {
 	MASCULINO,
@@ -286,6 +373,21 @@ const NAME_UNIFORME_B := [
 	"Cultural",
 	"Futurista",
 	"Rojo"
+]
+const ARMOR_UNIFORME_B := [
+	2,
+	1,
+	3,
+	2,
+	3,
+	1,
+	2,
+	3,
+	3,
+	2,
+	2,
+	4,
+	2
 ]
 
 enum GRUPO { GRUPO_A, GRUPO_B }

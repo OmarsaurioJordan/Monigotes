@@ -9,7 +9,7 @@
 *.zip
 *.rar
 *.exe
-build_web/*
-!build_web/.gitkeep
+web_export/*
+!web_export/.gitkeep
 *.translation
 *.*.translation
